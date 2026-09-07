@@ -1,6 +1,6 @@
 # Cache Cleaner
 
-`Cache Cleaner` 是一款的 Windows 桌面缓存清理工具。
+`Cache Cleaner` 是一款的 Windows 桌面硬盘清理工具。
 
 ## 测试环境
 
