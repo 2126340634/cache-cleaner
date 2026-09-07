@@ -7,10 +7,7 @@ import {
   QComboBox,
   QScrollArea,
   QBoxLayout,
-  Direction,
-  CursorShape,
-  QMessageBox,
-  ButtonRole
+  Direction
 } from '@nodegui/nodegui'
 import { execFileSync } from 'child_process'
 import * as fs from 'fs'
@@ -18,13 +15,8 @@ import { buildOptions } from './targets'
 import type { CacheOption } from './targets'
 import { dirSizeInfo, formatSize } from './scan'
 import { cleanOption } from './clean'
-import { debounce } from './utils'
+import { confirmBox, debounce, hand } from './utils'
 import { busy } from './scan-state'
-
-function hand<T extends QWidget>(w: T): T {
-  w.setCursor(CursorShape.PointingHandCursor)
-  return w
-}
 
 function listDrives(): string[] {
   const out: string[] = []
@@ -295,22 +287,7 @@ export function createCachePanel(): QWidget {
   })
 
   function confirmClean(count: number): boolean {
-    const box = new QMessageBox()
-    box.setWindowTitle('确认清理')
-    box.setText(`确定清理选中的 ${count} 项缓存吗？\n内容删除后不可恢复。`)
-    box.setStyleSheet('QLabel { font-size: 16px; }')
-    let ok = false
-    const yes = hand(new QPushButton())
-    yes.setText('开始清理')
-    yes.addEventListener('clicked', () => {
-      ok = true
-    })
-    const no = hand(new QPushButton())
-    no.setText('取消')
-    box.addButton(yes, ButtonRole.AcceptRole)
-    box.addButton(no, ButtonRole.RejectRole)
-    box.exec()
-    return ok
+    return confirmBox('确认清理', `确定清理选中的 ${count} 项缓存吗？\n内容删除后不可恢复。`, '开始清理')
   }
 
   function setUiEnabled(on: boolean): void {
@@ -344,8 +321,9 @@ export function createCachePanel(): QWidget {
       try {
         await cleanOption(r.option)
         done++
-      } catch {
-        r.mark.setText('清理失败')
+      } catch (err) {
+        const msg = (err as Error).message
+        r.mark.setText(msg.length > 22 ? `${msg.slice(0, 21)}…` : msg)
         failed++
       }
       progress.setValue(i + 1)

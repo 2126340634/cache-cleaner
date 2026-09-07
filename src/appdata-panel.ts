@@ -10,15 +10,12 @@ import {
   QComboBox,
   QScrollArea,
   QBoxLayout,
-  Direction,
-  CursorShape,
-  QMessageBox,
-  ButtonRole
+  Direction
 } from '@nodegui/nodegui'
 import { tagKb } from './kb'
 import { dirSizeInfo, formatSize } from './scan'
 import { cleanDir } from './clean'
-import { debounce } from './utils'
+import { confirmBox, debounce, hand } from './utils'
 import { busy } from './scan-state'
 
 const APP_SCOPES: Array<[string, string]> = [
@@ -27,28 +24,6 @@ const APP_SCOPES: Array<[string, string]> = [
   ['Roaming', 'Roaming']
 ]
 const SKIP = new Set(['Application Data'])
-
-function hand<T extends QWidget>(w: T): T {
-  w.setCursor(CursorShape.PointingHandCursor)
-  return w
-}
-
-function ask(message: string, yesText: string): boolean {
-  const box = new QMessageBox()
-  box.setWindowTitle('确认清理')
-  box.setText(message)
-  box.setStyleSheet('QLabel { font-size: 16px; }')
-  let ok = false
-  const yes = hand(new QPushButton())
-  yes.setText(yesText)
-  yes.addEventListener('clicked', () => (ok = true))
-  const no = hand(new QPushButton())
-  no.setText('取消')
-  box.addButton(yes, ButtonRole.AcceptRole)
-  box.addButton(no, ButtonRole.RejectRole)
-  box.exec()
-  return ok
-}
 
 function listDirs(dir: string): string[] {
   try {
@@ -164,7 +139,7 @@ export function createAppdataPanel(): { root: QWidget; refresh: () => void } {
       if (!warn || !checked) return
       checkbox.setChecked(false)
       syncSelectAll()
-      if (ask(`“${dir}”可能包含重要文件或数据，确定要勾选吗？`, '确定勾选')) checkbox.setChecked(true)
+      if (confirmBox('确认清理', `“${dir}”可能包含重要文件或数据，确定要勾选吗？`, '确定勾选')) checkbox.setChecked(true)
     })
     rl.addWidget(checkbox, 0)
 
@@ -300,7 +275,7 @@ export function createAppdataPanel(): { root: QWidget; refresh: () => void } {
       status.setText('请先勾选要清理的项目')
       return
     }
-    if (!ask(`确定清空这 ${picked.length} 个缓存文件夹的内容吗？\n删除后不可恢复。`, '确定清理')) return
+    if (!confirmBox('确认清理', `确定清空这 ${picked.length} 个缓存文件夹的内容吗？\n删除后不可恢复。`, '确定清理')) return
 
     setUiEnabled(false)
     cleanBtn.setText('清理中…')

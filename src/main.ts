@@ -1,39 +1,45 @@
 import { QMainWindow, QTabWidget, QIcon, WindowType } from '@nodegui/nodegui'
-import { execFile } from 'child_process'
-import * as fs from 'fs'
-import * as path from 'path'
 import sourceMapSupport from 'source-map-support'
-import { createCachePanel, systemWinDrive } from './cache-panel'
+import { execFileSync } from 'child_process'
+import * as path from 'path'
+import { createCachePanel } from './cache-panel'
 import { createAppdataPanel } from './appdata-panel'
+import { confirmBox } from './utils'
 import { busy } from './scan-state'
 
-sourceMapSupport.install()
-
-const winDrive = systemWinDrive()
-
-function isElevated(): boolean {
+const isElevated = (): boolean => {
   try {
-    fs.readdirSync(`${winDrive}Windows\\Temp`)
+    execFileSync('net', ['session'], { stdio: 'ignore' })
     return true
   } catch {
     return false
   }
 }
 
-if (!isElevated()) {
-  const entry = path.join(__dirname, 'main.cjs')
-  execFile(
-    'powershell.exe',
-    ['-NoProfile', '-NonInteractive', '-Command', `Start-Process -FilePath '${process.execPath}' -ArgumentList '${entry}' -Verb RunAs`],
-    (err) => {
-      if (!err) process.exit(0)
-    }
+// 管理员权限询问
+function promptElevate(): void {
+  const restart = confirmBox(
+    '需要管理员权限',
+    '清理 Windows 更新缓存等系统目录需要管理员权限。\n是否以管理员身份重启？',
+    '以管理员身份重启',
+    '暂不',
+    15
   )
+  if (!restart) return
+  const args = process.argv.slice(1).map((a) => path.resolve(a))
+  if (!args.length) return
+  const cmd = `Start-Process -FilePath '${process.execPath}' -ArgumentList '${args.join("','")}' -Verb RunAs`
+  try {
+    execFileSync('powershell.exe', ['-NoProfile', '-WindowStyle', 'Hidden', '-Command', cmd])
+    process.exit(0)
+  } catch {}
 }
+
+sourceMapSupport.install()
 
 const win = new QMainWindow()
 win.setWindowTitle('Cache Cleaner')
-win.resize(720, 540)
+win.resize(640, 480)
 win.setWindowFlag(WindowType.WindowMaximizeButtonHint, false)
 
 const tabs = new QTabWidget()
@@ -78,3 +84,4 @@ win.setStyleSheet(`
 `)
 win.show()
 ;(global as any).win = win
+if (!isElevated()) promptElevate()
