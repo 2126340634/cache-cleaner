@@ -1,5 +1,6 @@
 {
   "name": "cache-cleaner",
+  "description": "A disk cleaning Tool for Windows",
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build-code && npm run build-bundle",
@@ -9,9 +10,6 @@
     "package": "jam-pack-nodegui --config packaging/jam-pack-nodegui.json",
     "start": "npm run build && qode dist/main.cjs"
   },
-  "keywords": [
-    "nodegui"
-  ],
   "author": "heyCHEEMS",
   "license": "ISC",
   "devDependencies": {
