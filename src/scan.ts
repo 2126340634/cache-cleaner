@@ -2,61 +2,58 @@ import { promises as fsp } from 'fs'
 import type { Dirent } from 'fs'
 import * as path from 'path'
 
-const LIMIT = 32
-let n = 0
-const q: Array<() => void> = []
-function take(): Promise<void> {
-  if (n < LIMIT) {
-    n++
-    return Promise.resolve()
-  }
-  return new Promise<void>((res) => q.push(() => {
-    n++
-    res()
-  }))
-}
-function put(): void {
-  n--
-  q.shift()?.()
-}
-function lim<T>(fn: () => Promise<T>): Promise<T> {
-  return take().then(fn).finally(() => put())
-}
-
-async function walk(dir: string): Promise<number> {
-  let es: Dirent[]
-  try {
-    es = await lim(() => fsp.readdir(dir, { withFileTypes: true }))
-  } catch {
-    return 0
-  }
-  const jobs: Array<Promise<number>> = []
-  for (const e of es) {
-    const p = path.join(dir, e.name)
-    if (e.isSymbolicLink()) continue
-    if (e.isDirectory()) jobs.push(walk(p))
-    else if (e.isFile()) {
-      jobs.push(lim(() => fsp.stat(p)).then((s) => (s.isFile() ? s.size : 0)).catch(() => 0))
-    }
-  }
-  let total = 0
-  for (const j of jobs) total += await j
-  return total
-}
+const APPROX_IO = 20000 // 近似模式，单个文件夹最多fs操作次数
 
 export interface DirInfo {
   bytes: number
   denied: boolean
+  approx: boolean
 }
 
-export async function dirSizeInfo(dir: string): Promise<DirInfo> {
+interface Acc {
+  max: number // 最大可操作数
+  over: boolean // 超出max的可操作数
+}
+
+async function walk(dir: string, acc: Acc, signal?: AbortSignal): Promise<number> {
+  if (signal?.aborted) return 0
+  let es: Dirent[]
   try {
-    await lim(() => fsp.readdir(dir))
+    es = await fsp.readdir(dir, { withFileTypes: true })
+  } catch {
+    return 0
+  }
+  let total = 0
+  for (const e of es) {
+    if (signal?.aborted) break
+    if (e.isSymbolicLink()) continue
+    if (acc.over || --acc.max < 0) {
+      acc.over = true
+      break
+    }
+    const p = path.join(dir, e.name)
+    if (e.isDirectory()) total += await walk(p, acc, signal)
+    else if (e.isFile()) {
+      if (signal?.aborted) break
+      try {
+        const st = await fsp.stat(p)
+        if (st.isFile()) total += st.size
+      } catch {}
+    }
+  }
+  return total
+}
+
+export async function dirSizeInfo(dir: string, approx = false, signal?: AbortSignal): Promise<DirInfo> {
+  try {
+    await fsp.readdir(dir)
   } catch (err) {
     const code = (err as NodeJS.ErrnoException).code
-    return { bytes: 0, denied: code === 'EACCES' || code === 'EPERM' || code === 'EBUSY' }
+    return { bytes: 0, denied: code === 'EACCES' || code === 'EPERM' || code === 'EBUSY', approx: false }
   }
-  return { bytes: await walk(dir), denied: false }
+  const acc: Acc = { max: approx ? APPROX_IO : Infinity, over: false }
+  const bytes = await walk(dir, acc, signal)
+  return { bytes, denied: false, approx: acc.over }
 }
 
 const UNITS = ['KB', 'MB', 'GB', 'TB']

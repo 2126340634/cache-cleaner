@@ -1,0 +1,4361 @@
+[
+  {
+    "name": "npm-cache",
+    "label": "npm 包缓存",
+    "clean": true
+  },
+  {
+    "name": "pip",
+    "label": "pip 下载缓存",
+    "clean": true
+  },
+  {
+    "name": "pnpm-cache",
+    "label": "pnpm 缓存",
+    "clean": true
+  },
+  {
+    "name": "pnpm-state",
+    "label": "pnpm 状态文件"
+  },
+  {
+    "name": "node-gyp",
+    "label": "node-gyp 编译缓存",
+    "clean": true
+  },
+  {
+    "name": "numba",
+    "label": "numba JIT 编译缓存",
+    "clean": true
+  },
+  {
+    "name": "matplotlib",
+    "label": "matplotlib 字体缓存",
+    "clean": true
+  },
+  {
+    "name": "uv",
+    "label": "uv (Python) 包缓存",
+    "clean": true
+  },
+  {
+    "name": "pypa",
+    "label": "pip(PyPA) 缓存",
+    "clean": true
+  },
+  {
+    "name": "Yarn",
+    "label": "Yarn 缓存与全局包"
+  },
+  {
+    "name": "CrashDumps",
+    "label": "程序崩溃转储",
+    "clean": true
+  },
+  {
+    "name": "SquirrelTemp",
+    "label": "应用(Squirrel)更新临时目录",
+    "clean": true
+  },
+  {
+    "name": "Temp",
+    "label": "用户临时文件",
+    "clean": true
+  },
+  {
+    "name": "D3DSCache",
+    "label": "DirectX 着色器缓存",
+    "clean": true
+  },
+  {
+    "name": "EBWebView",
+    "label": "Edge WebView2 网页缓存",
+    "clean": true
+  },
+  {
+    "name": "BorisFX",
+    "label": "Boris FX 视频特效插件缓存",
+    "clean": true
+  },
+  {
+    "name": "electron",
+    "label": "Electron 运行时缓存",
+    "clean": true
+  },
+  {
+    "name": "nodegui-core-nodejs",
+    "label": "NodeGUI 本机构建缓存",
+    "clean": true
+  },
+  {
+    "name": "nodegui-mini-qt-nodejs",
+    "label": "NodeGUI mini-qt 缓存",
+    "clean": true
+  },
+  {
+    "name": "qode-nodejs",
+    "label": "qode 运行时缓存",
+    "clean": true
+  },
+  {
+    "name": "claude-cli-nodejs",
+    "label": "Claude Code CLI 缓存",
+    "clean": true
+  },
+  {
+    "name": "main.kts.compiled.cache",
+    "label": "Kotlin 脚本编译缓存",
+    "clean": true
+  },
+  {
+    "name": "cache",
+    "label": "qt 安装器缓存",
+    "clean": true
+  },
+  {
+    "name": "NEO",
+    "label": "NEO 编译器缓存",
+    "clean": true
+  },
+  {
+    "name": "ChromeExtensionCache",
+    "label": "浏览器扩展文件缓存",
+    "clean": true
+  },
+  {
+    "name": "CEF",
+    "label": "CEF(内嵌 Chromium) 用户数据"
+  },
+  {
+    "name": "User Data",
+    "label": "Chromium 内核浏览器用户数据(登录态)"
+  },
+  {
+    "name": "Programs",
+    "label": "已安装程序目录(VS Code / Ollama / Python 等)"
+  },
+  {
+    "name": "Microsoft",
+    "label": "Windows / 微软应用数据(勿整删)"
+  },
+  {
+    "name": "Google",
+    "label": "Google(Chrome 相关) 数据"
+  },
+  {
+    "name": "DingTalk_133",
+    "label": "钉钉 数据与缓存"
+  },
+  {
+    "name": "Feishu",
+    "label": "飞书 数据与缓存"
+  },
+  {
+    "name": "Lark",
+    "label": "飞书国际版(Lark) 数据"
+  },
+  {
+    "name": "Tencent",
+    "label": "腾讯系应用数据"
+  },
+  {
+    "name": "QuarkCloudDrive",
+    "label": "夸克网盘 数据"
+  },
+  {
+    "name": "Steam",
+    "label": "Steam 数据"
+  },
+  {
+    "name": "Epic Games",
+    "label": "Epic 游戏平台数据"
+  },
+  {
+    "name": "EpicGamesLauncher",
+    "label": "Epic 启动器数据"
+  },
+  {
+    "name": "Origin",
+    "label": "Origin 游戏平台数据"
+  },
+  {
+    "name": "Rockstar Games",
+    "label": "Rockstar 游戏平台数据"
+  },
+  {
+    "name": "Overwolf",
+    "label": "Overwolf 游戏辅助数据"
+  },
+  {
+    "name": "Postman",
+    "label": "Postman 数据"
+  },
+  {
+    "name": "JetBrains",
+    "label": "JetBrains IDE 索引/缓存"
+  },
+  {
+    "name": "Eclipse",
+    "label": "Eclipse IDE 数据"
+  },
+  {
+    "name": "HBuilder X",
+    "label": "HBuilderX IDE 数据"
+  },
+  {
+    "name": "Edraw",
+    "label": "亿图(Edraw) 数据"
+  },
+  {
+    "name": "Docker",
+    "label": "Docker 数据"
+  },
+  {
+    "name": "Android",
+    "label": "Android SDK 数据"
+  },
+  {
+    "name": "conda",
+    "label": "conda 数据"
+  },
+  {
+    "name": "nvm",
+    "label": "Node 版本管理器(已装 Node)"
+  },
+  {
+    "name": "Ollama",
+    "label": "Ollama 运行时数据"
+  },
+  {
+    "name": "Blender Foundation",
+    "label": "Blender 配置与缓存"
+  },
+  {
+    "name": "io.github.clash-verge-rev.clash-verge-rev",
+    "label": "Clash Verge Rev 代理配置"
+  },
+  {
+    "name": "JxBrowser",
+    "label": "JxBrowser 浏览器内核缓存",
+    "clean": true
+  },
+  {
+    "name": "nwjs",
+    "label": "nw.js 运行时缓存"
+  },
+  {
+    "name": "backburner",
+    "label": "Autodesk 渲染队列日志/配置"
+  },
+  {
+    "name": "mongodb",
+    "label": "MongoDB 数据"
+  },
+  {
+    "name": "weiyunapp-updater",
+    "label": "微云更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "motrix-updater",
+    "label": "Motrix 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "replay-updater",
+    "label": "Replay 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "gmm-updater",
+    "label": "GMM 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "dalv-updater",
+    "label": "Dalv 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": ".minecraft",
+    "label": "我的世界 数据与存档"
+  },
+  {
+    "name": "Code",
+    "label": "VS Code 用户配置"
+  },
+  {
+    "name": "obs-studio",
+    "label": "OBS Studio 配置/场景"
+  },
+  {
+    "name": "Notepad++",
+    "label": "Notepad++ 配置"
+  },
+  {
+    "name": "Typora",
+    "label": "Typora 配置"
+  },
+  {
+    "name": "WeMeetApp",
+    "label": "腾讯会议 数据"
+  },
+  {
+    "name": "WinRAR",
+    "label": "WinRAR 配置"
+  },
+  {
+    "name": "npm",
+    "label": "npm 全局安装包",
+    "clean": true
+  },
+  {
+    "name": "jupyter",
+    "label": "Jupyter 配置"
+  },
+  {
+    "name": "JetBrains",
+    "label": "JetBrains IDE 设置/日志"
+  },
+  {
+    "name": "putty",
+    "label": "PuTTY 会话与密钥"
+  },
+  {
+    "name": "Intel",
+    "label": "Intel 低权限数据"
+  },
+  {
+    "name": "NVIDIA",
+    "label": "NVIDIA 低权限数据"
+  },
+  {
+    "name": "Adobe",
+    "label": "Adobe 低权限数据(插件沙箱)"
+  },
+  {
+    "name": "ms-playwright",
+    "label": "Playwright 浏览器缓存",
+    "clean": true
+  },
+  {
+    "name": "NuGet",
+    "label": "NuGet 下载缓存",
+    "clean": true
+  },
+  {
+    "name": "BraveSoftware",
+    "label": "Brave 浏览器数据"
+  },
+  {
+    "name": "Chromium",
+    "label": "Chromium 内核数据(开发版)"
+  },
+  {
+    "name": "MicrosoftEdge",
+    "label": "Edge(Chromium) 用户数据"
+  },
+  {
+    "name": "Opera Software",
+    "label": "Opera 浏览器数据"
+  },
+  {
+    "name": "Discord",
+    "label": "Discord 客户端数据"
+  },
+  {
+    "name": "Slack",
+    "label": "Slack 工作区数据"
+  },
+  {
+    "name": "Telegram Desktop",
+    "label": "Telegram 桌面版数据"
+  },
+  {
+    "name": "LINE",
+    "label": "LINE 数据"
+  },
+  {
+    "name": "dingtalk",
+    "label": "钉钉 数据"
+  },
+  {
+    "name": "zoom",
+    "label": "Zoom 会议数据"
+  },
+  {
+    "name": "Spotify",
+    "label": "Spotify 数据与缓存"
+  },
+  {
+    "name": "foobar2000",
+    "label": "foobar2000 数据"
+  },
+  {
+    "name": "VLC",
+    "label": "VLC 播放器数据"
+  },
+  {
+    "name": "Audacity",
+    "label": "Audacity 音频数据"
+  },
+  {
+    "name": "Krita",
+    "label": "Krita 绘画数据"
+  },
+  {
+    "name": "Inkscape",
+    "label": "Inkscape 数据"
+  },
+  {
+    "name": "Battle.net",
+    "label": "暴雪战网 数据"
+  },
+  {
+    "name": "Riot Games",
+    "label": "拳头 游戏数据"
+  },
+  {
+    "name": "GOG Galaxy",
+    "label": "GOG 游戏平台数据"
+  },
+  {
+    "name": "Paradox Interactive",
+    "label": "Paradox 游戏数据"
+  },
+  {
+    "name": "Valve",
+    "label": "Valve 游戏数据"
+  },
+  {
+    "name": "clash-verge",
+    "label": "Clash Verge 代理配置(旧版)"
+  },
+  {
+    "name": "v2rayN",
+    "label": "v2rayN 代理配置"
+  },
+  {
+    "name": "flutter",
+    "label": "Flutter SDK/缓存"
+  },
+  {
+    "name": "dotnet",
+    "label": ".NET 相关数据/缓存"
+  },
+  {
+    "name": "rustup",
+    "label": "Rust 工具链数据"
+  },
+  {
+    "name": "Packages",
+    "label": "UWP 应用容器(勿整删)"
+  },
+  {
+    "name": "VirtualStore",
+    "label": "程序兼容性重定向数据"
+  },
+  {
+    "name": "PlaceholderTileLogoFolder",
+    "label": "系统占位磁贴数据"
+  },
+  {
+    "name": "Kingsoft",
+    "label": "金山(WPS 等)数据"
+  },
+  {
+    "name": "BaiduNetdisk",
+    "label": "百度网盘 数据"
+  },
+  {
+    "name": "Thunder Network",
+    "label": "迅雷 数据"
+  },
+  {
+    "name": "AnyDesk",
+    "label": "AnyDesk 数据"
+  },
+  {
+    "name": "TeamViewer",
+    "label": "TeamViewer 数据"
+  },
+  {
+    "name": "VMware",
+    "label": "VMware 数据"
+  },
+  {
+    "name": "VirtualBox",
+    "label": "VirtualBox 数据"
+  },
+  {
+    "name": "qBittorrent",
+    "label": "qBittorrent 下载器数据"
+  },
+  {
+    "name": "uTorrent",
+    "label": "uTorrent 数据"
+  },
+  {
+    "name": "FileZilla",
+    "label": "FileZilla 配置(含站点)"
+  },
+  {
+    "name": "WinSCP",
+    "label": "WinSCP 配置(含会话)"
+  },
+  {
+    "name": "Notion",
+    "label": "Notion 数据"
+  },
+  {
+    "name": "Obsidian",
+    "label": "Obsidian 笔记数据"
+  },
+  {
+    "name": "1Password",
+    "label": "1Password 保险库数据"
+  },
+  {
+    "name": "Bitwarden",
+    "label": "Bitwarden 数据"
+  },
+  {
+    "name": "KeePass",
+    "label": "KeePass 数据库"
+  },
+  {
+    "name": "Rambox",
+    "label": "Rambox 数据"
+  },
+  {
+    "name": "macromedia",
+    "label": "Macromedia/Flash 相关数据"
+  },
+  {
+    "name": "Citrix",
+    "label": "Citrix 数据"
+  },
+  {
+    "name": "BlueStacks",
+    "label": "蓝叠模拟器 数据"
+  },
+  {
+    "name": "LDPlayer",
+    "label": "雷电模拟器 数据"
+  },
+  {
+    "name": "MEmu",
+    "label": "逍遥模拟器 数据"
+  },
+  {
+    "name": "lunarclient-updater",
+    "label": "Lunar Client 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "perfectworldarena-updater",
+    "label": "完美世界竞技场 更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "ue_tools-updater",
+    "label": "UE 工具更新器缓存",
+    "clean": true
+  },
+  {
+    "name": "360Chrome",
+    "label": "360 浏览器数据"
+  },
+  {
+    "name": "360ChromeX",
+    "label": "360 浏览器 X 数据"
+  },
+  {
+    "name": "微信开发者工具",
+    "label": "微信开发者工具 数据"
+  },
+  {
+    "name": "Agora",
+    "label": "Agora(声网)SDK 数据"
+  },
+  {
+    "name": "AWSToolkit",
+    "label": "AWS Toolkit 数据"
+  },
+  {
+    "name": "ApplicationHistory",
+    "label": "应用使用历史记录"
+  },
+  {
+    "name": "assembly",
+    "label": ".NET 程序集缓存数据"
+  },
+  {
+    "name": "ATI",
+    "label": "AMD(ATI)显卡数据"
+  },
+  {
+    "name": "Comms",
+    "label": "系统通讯相关数据"
+  },
+  {
+    "name": "ConnectedDevicesPlatform",
+    "label": "连接设备平台(手机等)数据"
+  },
+  {
+    "name": "CrashReportClient",
+    "label": "崩溃上报客户端数据"
+  },
+  {
+    "name": "CrashRpt",
+    "label": "崩溃报告库数据"
+  },
+  {
+    "name": "DeadIsland",
+    "label": "死亡岛 游戏数据"
+  },
+  {
+    "name": "docker-secrets-engine",
+    "label": "Docker secrets 引擎数据"
+  },
+  {
+    "name": "EADesktop",
+    "label": "EA 桌面应用数据"
+  },
+  {
+    "name": "EALaunchHelper",
+    "label": "EA 启动辅助数据"
+  },
+  {
+    "name": "ElevatedDiagnostics",
+    "label": "提权诊断日志"
+  },
+  {
+    "name": "EpicOnlineServicesUIHelper",
+    "label": "Epic 在线服务数据"
+  },
+  {
+    "name": "FabPlugins",
+    "label": "Fab 插件数据"
+  },
+  {
+    "name": "FileConverter",
+    "label": "文件转换工具数据"
+  },
+  {
+    "name": "Firaxis Games",
+    "label": "Firaxis(文明等)游戏数据"
+  },
+  {
+    "name": "FLiNGTrainer",
+    "label": "风灵月影修改器 数据"
+  },
+  {
+    "name": "GameViewer",
+    "label": "GameViewer 游戏管家数据"
+  },
+  {
+    "name": "IdentityNexusIntegration",
+    "label": "Adobe 身份集成数据"
+  },
+  {
+    "name": "kotlin",
+    "label": "Kotlin 工具数据"
+  },
+  {
+    "name": "LGHUB",
+    "label": "罗技 G HUB 数据"
+  },
+  {
+    "name": "Link2EA",
+    "label": "EA 关联数据"
+  },
+  {
+    "name": "Microsoft SDKs",
+    "label": "微软 SDK 数据"
+  },
+  {
+    "name": "Microsoft_Corporation",
+    "label": "微软(低权限)数据"
+  },
+  {
+    "name": "NetEase",
+    "label": "网易 数据"
+  },
+  {
+    "name": "nomic.ai",
+    "label": "Nomic 客户端数据"
+  },
+  {
+    "name": "NVIDIA Corporation",
+    "label": "NVIDIA 数据"
+  },
+  {
+    "name": "NVIDIA Profile Inspector",
+    "label": "NVIDIA Profile Inspector 配置"
+  },
+  {
+    "name": "oms-client",
+    "label": "网易 oms 客户端数据"
+  },
+  {
+    "name": "Package Cache",
+    "label": "安装器包缓存(卸载/修复用,勿删)"
+  },
+  {
+    "name": "PeerDistRepub",
+    "label": "对等网络缓存"
+  },
+  {
+    "name": "pnpm",
+    "label": "pnpm store/状态数据"
+  },
+  {
+    "name": "ServiceHub",
+    "label": "Visual Studio ServiceHub 数据"
+  },
+  {
+    "name": "SafeNet Sentinel",
+    "label": "SafeNet 加密狗驱动数据"
+  },
+  {
+    "name": "Sentry",
+    "label": "Sentry 错误上报数据"
+  },
+  {
+    "name": "SnowLeopard Vision",
+    "label": "SnowLeopard 加速器数据"
+  },
+  {
+    "name": "speech",
+    "label": "Windows 语音数据"
+  },
+  {
+    "name": "TaskManClient",
+    "label": "游戏任务管家数据"
+  },
+  {
+    "name": "TortoiseGit",
+    "label": "TortoiseGit 配置"
+  },
+  {
+    "name": "UnrealEngine",
+    "label": "Unreal Engine 数据"
+  },
+  {
+    "name": "UnrealEngineLauncher",
+    "label": "UE 启动器数据"
+  },
+  {
+    "name": "wsl",
+    "label": "WSL 相关数据"
+  },
+  {
+    "name": "aha_doctor",
+    "label": "阿哈医生 数据"
+  },
+  {
+    "name": "anadius",
+    "label": "anadius 相关数据"
+  },
+  {
+    "name": "Malfatto Software",
+    "label": "Malfatto 软件数据"
+  },
+  {
+    "name": "LooksBuilder",
+    "label": "LooksBuilder 数据"
+  },
+  {
+    "name": "SisterLove",
+    "label": "SisterLove 数据"
+  },
+  {
+    "name": "Paralogue",
+    "label": "Paralogue 数据"
+  },
+  {
+    "name": "Qingfeng",
+    "label": "青峰 数据"
+  },
+  {
+    "name": "PVideoPlayer",
+    "label": "P 视频播放器数据"
+  },
+  {
+    "name": "UniCompactView",
+    "label": "UniCompactView 数据"
+  },
+  {
+    "name": "UniSDK",
+    "label": "UniSDK 数据"
+  },
+  {
+    "name": "ControllerCompanion",
+    "label": "Controller Companion 数据"
+  },
+  {
+    "name": "Oracle",
+    "label": "Oracle(Java)数据"
+  },
+  {
+    "name": "aDrive",
+    "label": "aDrive 数据"
+  },
+  {
+    "name": "aescripts",
+    "label": "AE 脚本数据"
+  },
+  {
+    "name": "Amadeus",
+    "label": "Amadeus 数据"
+  },
+  {
+    "name": "AMD",
+    "label": "AMD 数据"
+  },
+  {
+    "name": "baidu",
+    "label": "百度 数据"
+  },
+  {
+    "name": "BaiduYunGuanjia",
+    "label": "百度网盘管家 数据"
+  },
+  {
+    "name": "BaiduYunKernel",
+    "label": "百度网盘内核 数据"
+  },
+  {
+    "name": "boris-fx-direct",
+    "label": "BorisFX(直装版)数据"
+  },
+  {
+    "name": "BtLog",
+    "label": "BtLog(下载日志)数据"
+  },
+  {
+    "name": "com.adobe.dunamis",
+    "label": "Adobe(低权限)数据"
+  },
+  {
+    "name": "ContextMenuManager",
+    "label": "右键菜单管理器 配置"
+  },
+  {
+    "name": "create-next-app-nodejs",
+    "label": "Next.js 脚手架缓存"
+  },
+  {
+    "name": "cxstudy",
+    "label": "cxstudy 数据"
+  },
+  {
+    "name": "dalv",
+    "label": "dalv 数据"
+  },
+  {
+    "name": "Daum",
+    "label": "Daum(PotPlayer)数据"
+  },
+  {
+    "name": "dinglive",
+    "label": "钉钉直播(live)数据"
+  },
+  {
+    "name": "Docker Desktop",
+    "label": "Docker Desktop 数据"
+  },
+  {
+    "name": "EAAntiCheat.Installer.Tool",
+    "label": "EA 反作弊安装器数据"
+  },
+  {
+    "name": "G HUB",
+    "label": "罗技 G HUB 数据"
+  },
+  {
+    "name": "gmm",
+    "label": "gmm 数据"
+  },
+  {
+    "name": "Goldberg SteamEmu Saves",
+    "label": "游戏存档(勿删)"
+  },
+  {
+    "name": "GSE Saves",
+    "label": "游戏存档(勿删)"
+  },
+  {
+    "name": "heybox-acc-electron",
+    "label": "小黑盒加速器 数据"
+  },
+  {
+    "name": "IntelliJIdea",
+    "label": "IntelliJ IDEA 配置/缓存"
+  },
+  {
+    "name": "LarkShell",
+    "label": "飞书(LarkShell)数据"
+  },
+  {
+    "name": "LarkShellSingleton",
+    "label": "飞书(LarkShell)进程数据"
+  },
+  {
+    "name": "LGHUB_BKP",
+    "label": "罗技 G HUB 备份"
+  },
+  {
+    "name": "liteav",
+    "label": "腾讯 TRTC(liteav)数据"
+  },
+  {
+    "name": "Live2D",
+    "label": "Live2D 数据"
+  },
+  {
+    "name": "lunarclient",
+    "label": "Lunar Client 数据"
+  },
+  {
+    "name": "Maxon",
+    "label": "Maxon(C4D/Red Giant)数据"
+  },
+  {
+    "name": "Mediatronic",
+    "label": "Mediatronic 数据"
+  },
+  {
+    "name": "MinecraftPE_Netease",
+    "label": "我的世界(网易版)数据"
+  },
+  {
+    "name": "Motrix",
+    "label": "Motrix 下载器 数据"
+  },
+  {
+    "name": "MySQL",
+    "label": "MySQL 数据"
+  },
+  {
+    "name": "nextjs-nodejs",
+    "label": "Next.js 缓存"
+  },
+  {
+    "name": "notepad",
+    "label": "记事本 数据"
+  },
+  {
+    "name": "OfficeDesktop",
+    "label": "Office 桌面版数据"
+  },
+  {
+    "name": "ollama app.exe",
+    "label": "Ollama 相关数据"
+  },
+  {
+    "name": "Oray",
+    "label": "贝锐(Oray)数据"
+  },
+  {
+    "name": "ow-electron",
+    "label": "网易 OW 客户端数据"
+  },
+  {
+    "name": "PCL",
+    "label": "PCL(我的世界启动器)数据"
+  },
+  {
+    "name": "PotPlayerMini64",
+    "label": "PotPlayer 数据"
+  },
+  {
+    "name": "QQ",
+    "label": "腾讯QQ 数据"
+  },
+  {
+    "name": "QQEX",
+    "label": "QQEX 数据"
+  },
+  {
+    "name": "qqgameshare",
+    "label": "QQ 游戏分享数据"
+  },
+  {
+    "name": "Quark",
+    "label": "夸克 数据"
+  },
+  {
+    "name": "quark-cloud-drive",
+    "label": "夸克网盘 数据"
+  },
+  {
+    "name": "Red Giant",
+    "label": "Red Giant 插件数据"
+  },
+  {
+    "name": "Replay",
+    "label": "Replay 数据"
+  },
+  {
+    "name": "Reqable",
+    "label": "Reqable(抓包工具)数据"
+  },
+  {
+    "name": "Rizonesoft",
+    "label": "Rizonesoft 工具数据"
+  },
+  {
+    "name": "Sun",
+    "label": "Java(Sun/Oracle)数据"
+  },
+  {
+    "name": "The Quark Authors",
+    "label": "夸克 数据"
+  },
+  {
+    "name": "The QuarkCloudDrive Authors",
+    "label": "夸克网盘 数据"
+  },
+  {
+    "name": "Unreal Engine",
+    "label": "Unreal Engine 数据"
+  },
+  {
+    "name": "Visual Studio Setup",
+    "label": "Visual Studio 安装器数据(勿删)"
+  },
+  {
+    "name": "VoiceAccess",
+    "label": "Windows 语音访问数据"
+  },
+  {
+    "name": "Wmpvp",
+    "label": "Wmpvp 数据"
+  },
+  {
+    "name": "WPFLauncher",
+    "label": "WPF 启动器数据"
+  },
+  {
+    "name": "utForpc",
+    "label": "utForpc 数据"
+  },
+  {
+    "name": "repairTool",
+    "label": "修复工具数据"
+  },
+  {
+    "name": "realx",
+    "label": "realx 数据"
+  },
+  {
+    "name": "Live++",
+    "label": "Live++ 相关数据"
+  },
+  {
+    "name": "DBG",
+    "label": "调试相关数据"
+  },
+  {
+    "name": "Deployment",
+    "label": "部署相关数据"
+  },
+  {
+    "name": "fenv",
+    "label": "fenv 数据"
+  },
+  {
+    "name": "Axolot Games",
+    "label": "Axolot Games(牧场模拟类)数据"
+  },
+  {
+    "name": "FeverGames",
+    "label": "Fever Games 数据"
+  },
+  {
+    "name": "rail",
+    "label": "rail 相关数据"
+  },
+  {
+    "name": "tdappdesktop",
+    "label": "tdappdesktop 数据"
+  },
+  {
+    "name": "com.ccswitch.desktop",
+    "label": "ccswitch 桌面端数据"
+  },
+  {
+    "name": "OMSClient",
+    "label": "网易 oms 客户端数据"
+  },
+  {
+    "name": "INetHistory",
+    "label": "网络历史记录"
+  },
+  {
+    "name": "NhNotifSys",
+    "label": "NhNotifSys 通知数据"
+  },
+  {
+    "name": "node-addon-native-custom-loader",
+    "label": "原生 Node 插件加载缓存"
+  },
+  {
+    "name": "android_third_lib",
+    "label": "模拟器 Android 第三方库数据"
+  },
+  {
+    "name": "mssdk",
+    "label": "mssdk 数据"
+  },
+  {
+    "name": "WNS",
+    "label": "WNS 数据"
+  },
+  {
+    "name": "SnowLeopard Vision.exe",
+    "label": "SnowLeopard 加速器数据"
+  },
+  {
+    "name": "Activision",
+    "label": "Activision 数据"
+  },
+  {
+    "name": "Blizzard Entertainment",
+    "label": "Blizzard Entertainment 数据"
+  },
+  {
+    "name": "Electronic Arts",
+    "label": "Electronic Arts 数据"
+  },
+  {
+    "name": "Ubisoft",
+    "label": "Ubisoft 数据"
+  },
+  {
+    "name": "Bethesda Softworks",
+    "label": "Bethesda Softworks 数据"
+  },
+  {
+    "name": "CD Projekt Red",
+    "label": "CD Projekt Red 数据"
+  },
+  {
+    "name": "Bandai Namco",
+    "label": "Bandai Namco 数据"
+  },
+  {
+    "name": "Capcom",
+    "label": "Capcom 数据"
+  },
+  {
+    "name": "SEGA",
+    "label": "SEGA 数据"
+  },
+  {
+    "name": "Square Enix",
+    "label": "Square Enix 数据"
+  },
+  {
+    "name": "Konami",
+    "label": "Konami 数据"
+  },
+  {
+    "name": "2K Games",
+    "label": "2K Games 数据"
+  },
+  {
+    "name": "Telltale Games",
+    "label": "Telltale Games 数据"
+  },
+  {
+    "name": "Warner Bros. Interactive",
+    "label": "Warner Bros. Interactive 数据"
+  },
+  {
+    "name": "Focus Entertainment",
+    "label": "Focus Entertainment 数据"
+  },
+  {
+    "name": "Klei",
+    "label": "Klei 数据"
+  },
+  {
+    "name": "Mojang",
+    "label": "Mojang 数据"
+  },
+  {
+    "name": "miHoYo",
+    "label": "miHoYo 数据"
+  },
+  {
+    "name": "HoYoverse",
+    "label": "HoYoverse 数据"
+  },
+  {
+    "name": "Genshin Impact",
+    "label": "Genshin Impact 数据"
+  },
+  {
+    "name": "Star Rail",
+    "label": "Star Rail 数据"
+  },
+  {
+    "name": "ZenlessZoneZero",
+    "label": "ZenlessZoneZero 数据"
+  },
+  {
+    "name": "Wuthering Waves",
+    "label": "Wuthering Waves 数据"
+  },
+  {
+    "name": "Kuro Games",
+    "label": "Kuro Games 数据"
+  },
+  {
+    "name": "Perfect World",
+    "label": "Perfect World 数据"
+  },
+  {
+    "name": "Sohu",
+    "label": "Sohu 数据"
+  },
+  {
+    "name": "Changyou",
+    "label": "Changyou 数据"
+  },
+  {
+    "name": "Duoyi",
+    "label": "Duoyi 数据"
+  },
+  {
+    "name": "TapTap",
+    "label": "TapTap 数据"
+  },
+  {
+    "name": "Xiaomi",
+    "label": "Xiaomi 数据"
+  },
+  {
+    "name": "HUAWEI",
+    "label": "HUAWEI 数据"
+  },
+  {
+    "name": "OPPO",
+    "label": "OPPO 数据"
+  },
+  {
+    "name": "vivo",
+    "label": "vivo 数据"
+  },
+  {
+    "name": "Samsung",
+    "label": "Samsung 数据"
+  },
+  {
+    "name": "ASUS",
+    "label": "ASUS 数据"
+  },
+  {
+    "name": "MSI",
+    "label": "MSI 数据"
+  },
+  {
+    "name": "GIGABYTE",
+    "label": "GIGABYTE 数据"
+  },
+  {
+    "name": "Razer",
+    "label": "Razer 数据"
+  },
+  {
+    "name": "Corsair",
+    "label": "Corsair 数据"
+  },
+  {
+    "name": "Logitech",
+    "label": "Logitech 数据"
+  },
+  {
+    "name": "SteelSeries",
+    "label": "SteelSeries 数据"
+  },
+  {
+    "name": "HyperX",
+    "label": "HyperX 数据"
+  },
+  {
+    "name": "NZXT",
+    "label": "NZXT 数据"
+  },
+  {
+    "name": "Thermaltake",
+    "label": "Thermaltake 数据"
+  },
+  {
+    "name": "Apple",
+    "label": "Apple 数据"
+  },
+  {
+    "name": "Apple Computer",
+    "label": "Apple Computer 数据"
+  },
+  {
+    "name": "Microsoft Office",
+    "label": "Microsoft Office 数据"
+  },
+  {
+    "name": "Office",
+    "label": "Office 数据"
+  },
+  {
+    "name": "Outlook",
+    "label": "Outlook 数据"
+  },
+  {
+    "name": "OneDrive",
+    "label": "OneDrive 数据"
+  },
+  {
+    "name": "Skype",
+    "label": "Skype 数据"
+  },
+  {
+    "name": "Lync",
+    "label": "Lync 数据"
+  },
+  {
+    "name": "Yahoo",
+    "label": "Yahoo 数据"
+  },
+  {
+    "name": "AOL",
+    "label": "AOL 数据"
+  },
+  {
+    "name": "Baidu Browser",
+    "label": "Baidu Browser 数据"
+  },
+  {
+    "name": "BaiduNetdiskDownload",
+    "label": "BaiduNetdiskDownload 数据"
+  },
+  {
+    "name": "BaiduYun",
+    "label": "BaiduYun 数据"
+  },
+  {
+    "name": "Alibaba",
+    "label": "Alibaba 数据"
+  },
+  {
+    "name": "Aliyun",
+    "label": "Aliyun 数据"
+  },
+  {
+    "name": "Taobao",
+    "label": "Taobao 数据"
+  },
+  {
+    "name": "Alipay",
+    "label": "Alipay 数据"
+  },
+  {
+    "name": "WeChat",
+    "label": "WeChat 数据"
+  },
+  {
+    "name": "Weixin",
+    "label": "Weixin 数据"
+  },
+  {
+    "name": "WeCom",
+    "label": "WeCom 数据"
+  },
+  {
+    "name": "TencentMeeting",
+    "label": "TencentMeeting 数据"
+  },
+  {
+    "name": "QQMusic",
+    "label": "QQMusic 数据"
+  },
+  {
+    "name": "QQVideo",
+    "label": "QQVideo 数据"
+  },
+  {
+    "name": "QQBrowser",
+    "label": "QQBrowser 数据"
+  },
+  {
+    "name": "QQ拼音",
+    "label": "QQ拼音 数据"
+  },
+  {
+    "name": "QQPinyin",
+    "label": "QQPinyin 数据"
+  },
+  {
+    "name": "WeGame",
+    "label": "WeGame 数据"
+  },
+  {
+    "name": "Xunlei",
+    "label": "Xunlei 数据"
+  },
+  {
+    "name": "Thunder",
+    "label": "Thunder 数据"
+  },
+  {
+    "name": "BitComet",
+    "label": "BitComet 数据"
+  },
+  {
+    "name": "eMule",
+    "label": "eMule 数据"
+  },
+  {
+    "name": "Internet Download Manager",
+    "label": "Internet Download Manager 数据"
+  },
+  {
+    "name": "IDM",
+    "label": "IDM 数据"
+  },
+  {
+    "name": "FDM",
+    "label": "FDM 数据"
+  },
+  {
+    "name": "JDownloader",
+    "label": "JDownloader 数据"
+  },
+  {
+    "name": "Free Download Manager",
+    "label": "Free Download Manager 数据"
+  },
+  {
+    "name": "uTorrent Web",
+    "label": "uTorrent Web 数据"
+  },
+  {
+    "name": "Transmission",
+    "label": "Transmission 数据"
+  },
+  {
+    "name": "Deluge",
+    "label": "Deluge 数据"
+  },
+  {
+    "name": "Aria2",
+    "label": "Aria2 数据"
+  },
+  {
+    "name": "Brave",
+    "label": "Brave 数据"
+  },
+  {
+    "name": "Firefox",
+    "label": "Firefox 数据"
+  },
+  {
+    "name": "Chrome",
+    "label": "Chrome 数据"
+  },
+  {
+    "name": "Edge",
+    "label": "Edge 数据"
+  },
+  {
+    "name": "Safari",
+    "label": "Safari 数据"
+  },
+  {
+    "name": "Opera",
+    "label": "Opera 数据"
+  },
+  {
+    "name": "Vivaldi",
+    "label": "Vivaldi 数据"
+  },
+  {
+    "name": "Yandex",
+    "label": "Yandex 数据"
+  },
+  {
+    "name": "Maxthon",
+    "label": "Maxthon 数据"
+  },
+  {
+    "name": "Waterfox",
+    "label": "Waterfox 数据"
+  },
+  {
+    "name": "Pale Moon",
+    "label": "Pale Moon 数据"
+  },
+  {
+    "name": "Tor Browser",
+    "label": "Tor Browser 数据"
+  },
+  {
+    "name": "Slimjet",
+    "label": "Slimjet 数据"
+  },
+  {
+    "name": "CentBrowser",
+    "label": "CentBrowser 数据"
+  },
+  {
+    "name": "Avast Browser",
+    "label": "Avast Browser 数据"
+  },
+  {
+    "name": "CCleaner",
+    "label": "CCleaner 数据"
+  },
+  {
+    "name": "Defraggler",
+    "label": "Defraggler 数据"
+  },
+  {
+    "name": "Recuva",
+    "label": "Recuva 数据"
+  },
+  {
+    "name": "Speccy",
+    "label": "Speccy 数据"
+  },
+  {
+    "name": "7-Zip",
+    "label": "7-Zip 数据"
+  },
+  {
+    "name": "WinZip",
+    "label": "WinZip 数据"
+  },
+  {
+    "name": "Bandizip",
+    "label": "Bandizip 数据"
+  },
+  {
+    "name": "PeaZip",
+    "label": "PeaZip 数据"
+  },
+  {
+    "name": "PowerArchiver",
+    "label": "PowerArchiver 数据"
+  },
+  {
+    "name": "KMPlayer",
+    "label": "KMPlayer 数据"
+  },
+  {
+    "name": "GOM Player",
+    "label": "GOM Player 数据"
+  },
+  {
+    "name": "PotPlayer",
+    "label": "PotPlayer 数据"
+  },
+  {
+    "name": "MPC-HC",
+    "label": "MPC-HC 数据"
+  },
+  {
+    "name": "VLC media player",
+    "label": "VLC media player 数据"
+  },
+  {
+    "name": "AIMP",
+    "label": "AIMP 数据"
+  },
+  {
+    "name": "JetAudio",
+    "label": "JetAudio 数据"
+  },
+  {
+    "name": "Winamp",
+    "label": "Winamp 数据"
+  },
+  {
+    "name": "FL Studio",
+    "label": "FL Studio 数据"
+  },
+  {
+    "name": "Cubase",
+    "label": "Cubase 数据"
+  },
+  {
+    "name": "Ableton",
+    "label": "Ableton 数据"
+  },
+  {
+    "name": "Studio One",
+    "label": "Studio One 数据"
+  },
+  {
+    "name": "Reaper",
+    "label": "Reaper 数据"
+  },
+  {
+    "name": "LMMS",
+    "label": "LMMS 数据"
+  },
+  {
+    "name": "OBS Studio",
+    "label": "OBS Studio 数据"
+  },
+  {
+    "name": "XSplit",
+    "label": "XSplit 数据"
+  },
+  {
+    "name": "Streamlabs",
+    "label": "Streamlabs 数据"
+  },
+  {
+    "name": "Dxtory",
+    "label": "Dxtory 数据"
+  },
+  {
+    "name": "Bandicam",
+    "label": "Bandicam 数据"
+  },
+  {
+    "name": "Fraps",
+    "label": "Fraps 数据"
+  },
+  {
+    "name": "ShareX",
+    "label": "ShareX 数据"
+  },
+  {
+    "name": "Greenshot",
+    "label": "Greenshot 数据"
+  },
+  {
+    "name": "Lightshot",
+    "label": "Lightshot 数据"
+  },
+  {
+    "name": "Snipping Tool",
+    "label": "Snipping Tool 数据"
+  },
+  {
+    "name": "Snagit",
+    "label": "Snagit 数据"
+  },
+  {
+    "name": "Camtasia",
+    "label": "Camtasia 数据"
+  },
+  {
+    "name": "Filmora",
+    "label": "Filmora 数据"
+  },
+  {
+    "name": "Premiere Pro",
+    "label": "Premiere Pro 数据"
+  },
+  {
+    "name": "After Effects",
+    "label": "After Effects 数据"
+  },
+  {
+    "name": "Photoshop",
+    "label": "Photoshop 数据"
+  },
+  {
+    "name": "Lightroom",
+    "label": "Lightroom 数据"
+  },
+  {
+    "name": "Illustrator",
+    "label": "Illustrator 数据"
+  },
+  {
+    "name": "InDesign",
+    "label": "InDesign 数据"
+  },
+  {
+    "name": "DaVinci Resolve",
+    "label": "DaVinci Resolve 数据"
+  },
+  {
+    "name": "Final Cut Pro",
+    "label": "Final Cut Pro 数据"
+  },
+  {
+    "name": "HandBrake",
+    "label": "HandBrake 数据"
+  },
+  {
+    "name": "Format Factory",
+    "label": "Format Factory 数据"
+  },
+  {
+    "name": "Freemake",
+    "label": "Freemake 数据"
+  },
+  {
+    "name": "Any Video Converter",
+    "label": "Any Video Converter 数据"
+  },
+  {
+    "name": "GIMP",
+    "label": "GIMP 数据"
+  },
+  {
+    "name": "Paint.NET",
+    "label": "Paint.NET 数据"
+  },
+  {
+    "name": "Blender",
+    "label": "Blender 数据"
+  },
+  {
+    "name": "Autodesk",
+    "label": "Autodesk 数据"
+  },
+  {
+    "name": "AutoCAD",
+    "label": "AutoCAD 数据"
+  },
+  {
+    "name": "Maya",
+    "label": "Maya 数据"
+  },
+  {
+    "name": "3ds Max",
+    "label": "3ds Max 数据"
+  },
+  {
+    "name": "ZBrush",
+    "label": "ZBrush 数据"
+  },
+  {
+    "name": "Substance",
+    "label": "Substance 数据"
+  },
+  {
+    "name": "SketchUp",
+    "label": "SketchUp 数据"
+  },
+  {
+    "name": "Rhino",
+    "label": "Rhino 数据"
+  },
+  {
+    "name": "SolidWorks",
+    "label": "SolidWorks 数据"
+  },
+  {
+    "name": "Fusion 360",
+    "label": "Fusion 360 数据"
+  },
+  {
+    "name": "CATIA",
+    "label": "CATIA 数据"
+  },
+  {
+    "name": "Corel",
+    "label": "Corel 数据"
+  },
+  {
+    "name": "CorelDRAW",
+    "label": "CorelDRAW 数据"
+  },
+  {
+    "name": "PaintShop Pro",
+    "label": "PaintShop Pro 数据"
+  },
+  {
+    "name": "Affinity",
+    "label": "Affinity 数据"
+  },
+  {
+    "name": "Canva",
+    "label": "Canva 数据"
+  },
+  {
+    "name": "FigJam",
+    "label": "FigJam 数据"
+  },
+  {
+    "name": "Figma",
+    "label": "Figma 数据"
+  },
+  {
+    "name": "Sketch",
+    "label": "Sketch 数据"
+  },
+  {
+    "name": "Zeplin",
+    "label": "Zeplin 数据"
+  },
+  {
+    "name": "Microsoft Visual Studio",
+    "label": "Microsoft Visual Studio 数据"
+  },
+  {
+    "name": "Visual Studio Code",
+    "label": "Visual Studio Code 数据"
+  },
+  {
+    "name": "VS Code Insiders",
+    "label": "VS Code Insiders 数据"
+  },
+  {
+    "name": "VSCodium",
+    "label": "VSCodium 数据"
+  },
+  {
+    "name": "Rider",
+    "label": "Rider 数据"
+  },
+  {
+    "name": "IntelliJ IDEA",
+    "label": "IntelliJ IDEA 数据"
+  },
+  {
+    "name": "WebStorm",
+    "label": "WebStorm 数据"
+  },
+  {
+    "name": "PhpStorm",
+    "label": "PhpStorm 数据"
+  },
+  {
+    "name": "PyCharm",
+    "label": "PyCharm 数据"
+  },
+  {
+    "name": "GoLand",
+    "label": "GoLand 数据"
+  },
+  {
+    "name": "RubyMine",
+    "label": "RubyMine 数据"
+  },
+  {
+    "name": "CLion",
+    "label": "CLion 数据"
+  },
+  {
+    "name": "DataGrip",
+    "label": "DataGrip 数据"
+  },
+  {
+    "name": "Android Studio",
+    "label": "Android Studio 数据"
+  },
+  {
+    "name": "Xcode",
+    "label": "Xcode 数据"
+  },
+  {
+    "name": "Unity Hub",
+    "label": "Unity Hub 数据"
+  },
+  {
+    "name": "Unity",
+    "label": "Unity 数据"
+  },
+  {
+    "name": "Godot",
+    "label": "Godot 数据"
+  },
+  {
+    "name": "Cocos",
+    "label": "Cocos 数据"
+  },
+  {
+    "name": "NetBeans",
+    "label": "NetBeans 数据"
+  },
+  {
+    "name": "Eclipse Foundation",
+    "label": "Eclipse Foundation 数据"
+  },
+  {
+    "name": "BlueJ",
+    "label": "BlueJ 数据"
+  },
+  {
+    "name": "Processing",
+    "label": "Processing 数据"
+  },
+  {
+    "name": "Arduino",
+    "label": "Arduino 数据"
+  },
+  {
+    "name": "Raspberry Pi",
+    "label": "Raspberry Pi 数据"
+  },
+  {
+    "name": "Wireshark",
+    "label": "Wireshark 数据"
+  },
+  {
+    "name": "Fiddler",
+    "label": "Fiddler 数据"
+  },
+  {
+    "name": "Insomnia",
+    "label": "Insomnia 数据"
+  },
+  {
+    "name": "Burp Suite",
+    "label": "Burp Suite 数据"
+  },
+  {
+    "name": "Charles",
+    "label": "Charles 数据"
+  },
+  {
+    "name": "HTTP Toolkit",
+    "label": "HTTP Toolkit 数据"
+  },
+  {
+    "name": "Sublime Text",
+    "label": "Sublime Text 数据"
+  },
+  {
+    "name": "Atom",
+    "label": "Atom 数据"
+  },
+  {
+    "name": "Brackets",
+    "label": "Brackets 数据"
+  },
+  {
+    "name": "TextPad",
+    "label": "TextPad 数据"
+  },
+  {
+    "name": "UltraEdit",
+    "label": "UltraEdit 数据"
+  },
+  {
+    "name": "Geany",
+    "label": "Geany 数据"
+  },
+  {
+    "name": "Vim",
+    "label": "Vim 数据"
+  },
+  {
+    "name": "Neovim",
+    "label": "Neovim 数据"
+  },
+  {
+    "name": "git",
+    "label": "git 数据"
+  },
+  {
+    "name": "GitHub Desktop",
+    "label": "GitHub Desktop 数据"
+  },
+  {
+    "name": "GitKraken",
+    "label": "GitKraken 数据"
+  },
+  {
+    "name": "SourceTree",
+    "label": "SourceTree 数据"
+  },
+  {
+    "name": "TortoiseSVN",
+    "label": "TortoiseSVN 数据"
+  },
+  {
+    "name": "Fork",
+    "label": "Fork 数据"
+  },
+  {
+    "name": "Docker Toolbox",
+    "label": "Docker Toolbox 数据"
+  },
+  {
+    "name": "Vagrant",
+    "label": "Vagrant 数据"
+  },
+  {
+    "name": "Kubernetes",
+    "label": "Kubernetes 数据"
+  },
+  {
+    "name": "kubectl",
+    "label": "kubectl 数据"
+  },
+  {
+    "name": "Minikube",
+    "label": "Minikube 数据"
+  },
+  {
+    "name": "Podman",
+    "label": "Podman 数据"
+  },
+  {
+    "name": "WSL2",
+    "label": "WSL2 数据"
+  },
+  {
+    "name": "Hyper-V",
+    "label": "Hyper-V 数据"
+  },
+  {
+    "name": "MobaXterm",
+    "label": "MobaXterm 数据"
+  },
+  {
+    "name": "Termius",
+    "label": "Termius 数据"
+  },
+  {
+    "name": "Xshell",
+    "label": "Xshell 数据"
+  },
+  {
+    "name": "SecureCRT",
+    "label": "SecureCRT 数据"
+  },
+  {
+    "name": "FileZilla Server",
+    "label": "FileZilla Server 数据"
+  },
+  {
+    "name": "Core FTP",
+    "label": "Core FTP 数据"
+  },
+  {
+    "name": "Cyberduck",
+    "label": "Cyberduck 数据"
+  },
+  {
+    "name": "Mountain Duck",
+    "label": "Mountain Duck 数据"
+  },
+  {
+    "name": "Rclone",
+    "label": "Rclone 数据"
+  },
+  {
+    "name": "Mega",
+    "label": "Mega 数据"
+  },
+  {
+    "name": "Dropbox",
+    "label": "Dropbox 数据"
+  },
+  {
+    "name": "Google Drive",
+    "label": "Google Drive 数据"
+  },
+  {
+    "name": "iCloud",
+    "label": "iCloud 数据"
+  },
+  {
+    "name": "Nutstore",
+    "label": "Nutstore 数据"
+  },
+  {
+    "name": "坚果云",
+    "label": "坚果云 数据"
+  },
+  {
+    "name": "Seafile",
+    "label": "Seafile 数据"
+  },
+  {
+    "name": "Resilio",
+    "label": "Resilio 数据"
+  },
+  {
+    "name": "Syncthing",
+    "label": "Syncthing 数据"
+  },
+  {
+    "name": "WeTransfer",
+    "label": "WeTransfer 数据"
+  },
+  {
+    "name": "AirDroid",
+    "label": "AirDroid 数据"
+  },
+  {
+    "name": "ToDesk",
+    "label": "ToDesk 数据"
+  },
+  {
+    "name": "SunloginClient",
+    "label": "SunloginClient 数据"
+  },
+  {
+    "name": "向日葵",
+    "label": "向日葵 数据"
+  },
+  {
+    "name": "RustDesk",
+    "label": "RustDesk 数据"
+  },
+  {
+    "name": "Chrome Remote Desktop",
+    "label": "Chrome Remote Desktop 数据"
+  },
+  {
+    "name": "Parsec",
+    "label": "Parsec 数据"
+  },
+  {
+    "name": "Moonlight",
+    "label": "Moonlight 数据"
+  },
+  {
+    "name": "SteamLibrary",
+    "label": "SteamLibrary 数据"
+  },
+  {
+    "name": "GOG",
+    "label": "GOG 数据"
+  },
+  {
+    "name": "Origin Games",
+    "label": "Origin Games 数据"
+  },
+  {
+    "name": "Ubisoft Connect",
+    "label": "Ubisoft Connect 数据"
+  },
+  {
+    "name": "Battle.net App",
+    "label": "Battle.net App 数据"
+  },
+  {
+    "name": "LeagueClient",
+    "label": "LeagueClient 数据"
+  },
+  {
+    "name": "TFT",
+    "label": "TFT 数据"
+  },
+  {
+    "name": "Valorant",
+    "label": "Valorant 数据"
+  },
+  {
+    "name": "Apex Legends",
+    "label": "Apex Legends 数据"
+  },
+  {
+    "name": "Fortnite",
+    "label": "Fortnite 数据"
+  },
+  {
+    "name": "Rocket League",
+    "label": "Rocket League 数据"
+  },
+  {
+    "name": "CSGO",
+    "label": "CSGO 数据"
+  },
+  {
+    "name": "Counter-Strike",
+    "label": "Counter-Strike 数据"
+  },
+  {
+    "name": "Dota 2",
+    "label": "Dota 2 数据"
+  },
+  {
+    "name": "PUBG",
+    "label": "PUBG 数据"
+  },
+  {
+    "name": "Minecraft Launcher",
+    "label": "Minecraft Launcher 数据"
+  },
+  {
+    "name": "TLauncher",
+    "label": "TLauncher 数据"
+  },
+  {
+    "name": "Prism Launcher",
+    "label": "Prism Launcher 数据"
+  },
+  {
+    "name": "CurseForge",
+    "label": "CurseForge 数据"
+  },
+  {
+    "name": "Modrinth",
+    "label": "Modrinth 数据"
+  },
+  {
+    "name": "GeForce Experience",
+    "label": "GeForce Experience 数据"
+  },
+  {
+    "name": "NVIDIA App",
+    "label": "NVIDIA App 数据"
+  },
+  {
+    "name": "AMD Radeon",
+    "label": "AMD Radeon 数据"
+  },
+  {
+    "name": "MSI Afterburner",
+    "label": "MSI Afterburner 数据"
+  },
+  {
+    "name": "RTSS",
+    "label": "RTSS 数据"
+  },
+  {
+    "name": "RiverTuner",
+    "label": "RiverTuner 数据"
+  },
+  {
+    "name": "HWiNFO",
+    "label": "HWiNFO 数据"
+  },
+  {
+    "name": "AIDA64",
+    "label": "AIDA64 数据"
+  },
+  {
+    "name": "CPU-Z",
+    "label": "CPU-Z 数据"
+  },
+  {
+    "name": "GPU-Z",
+    "label": "GPU-Z 数据"
+  },
+  {
+    "name": "Cinebench",
+    "label": "Cinebench 数据"
+  },
+  {
+    "name": "3DMark",
+    "label": "3DMark 数据"
+  },
+  {
+    "name": "CrystalDiskMark",
+    "label": "CrystalDiskMark 数据"
+  },
+  {
+    "name": "AS SSD Benchmark",
+    "label": "AS SSD Benchmark 数据"
+  },
+  {
+    "name": "OCCT",
+    "label": "OCCT 数据"
+  },
+  {
+    "name": "FurMark",
+    "label": "FurMark 数据"
+  },
+  {
+    "name": "Prime95",
+    "label": "Prime95 数据"
+  },
+  {
+    "name": "Core Temp",
+    "label": "Core Temp 数据"
+  },
+  {
+    "name": "SpeedFan",
+    "label": "SpeedFan 数据"
+  },
+  {
+    "name": "OpenHardwareMonitor",
+    "label": "OpenHardwareMonitor 数据"
+  },
+  {
+    "name": "WinDirStat",
+    "label": "WinDirStat 数据"
+  },
+  {
+    "name": "TreeSize",
+    "label": "TreeSize 数据"
+  },
+  {
+    "name": "SpaceSniffer",
+    "label": "SpaceSniffer 数据"
+  },
+  {
+    "name": "Everything",
+    "label": "Everything 数据"
+  },
+  {
+    "name": "Search Everything",
+    "label": "Search Everything 数据"
+  },
+  {
+    "name": "Listary",
+    "label": "Listary 数据"
+  },
+  {
+    "name": "Keypirinha",
+    "label": "Keypirinha 数据"
+  },
+  {
+    "name": "PowerToys",
+    "label": "PowerToys 数据"
+  },
+  {
+    "name": "AutoHotkey",
+    "label": "AutoHotkey 数据"
+  },
+  {
+    "name": "AutoIt",
+    "label": "AutoIt 数据"
+  },
+  {
+    "name": "RoboForm",
+    "label": "RoboForm 数据"
+  },
+  {
+    "name": "LastPass",
+    "label": "LastPass 数据"
+  },
+  {
+    "name": "Dashlane",
+    "label": "Dashlane 数据"
+  },
+  {
+    "name": "Enpass",
+    "label": "Enpass 数据"
+  },
+  {
+    "name": "NordVPN",
+    "label": "NordVPN 数据"
+  },
+  {
+    "name": "ExpressVPN",
+    "label": "ExpressVPN 数据"
+  },
+  {
+    "name": "Surfshark",
+    "label": "Surfshark 数据"
+  },
+  {
+    "name": "ProtonVPN",
+    "label": "ProtonVPN 数据"
+  },
+  {
+    "name": "WireGuard",
+    "label": "WireGuard 数据"
+  },
+  {
+    "name": "OpenVPN",
+    "label": "OpenVPN 数据"
+  },
+  {
+    "name": "Clash for Windows",
+    "label": "Clash for Windows 数据"
+  },
+  {
+    "name": "ClashX",
+    "label": "ClashX 数据"
+  },
+  {
+    "name": "Shadowsocks",
+    "label": "Shadowsocks 数据"
+  },
+  {
+    "name": "V2Ray",
+    "label": "V2Ray 数据"
+  },
+  {
+    "name": "Xray",
+    "label": "Xray 数据"
+  },
+  {
+    "name": "sing-box",
+    "label": "sing-box 数据"
+  },
+  {
+    "name": "hysteria",
+    "label": "hysteria 数据"
+  },
+  {
+    "name": "Karing",
+    "label": "Karing 数据"
+  },
+  {
+    "name": "Netch",
+    "label": "Netch 数据"
+  },
+  {
+    "name": "Mihomo",
+    "label": "Mihomo 数据"
+  },
+  {
+    "name": "AdGuard",
+    "label": "AdGuard 数据"
+  },
+  {
+    "name": "uBlock Origin",
+    "label": "uBlock Origin 数据"
+  },
+  {
+    "name": "Privacy Badger",
+    "label": "Privacy Badger 数据"
+  },
+  {
+    "name": "Emsisoft",
+    "label": "Emsisoft 数据"
+  },
+  {
+    "name": "Kaspersky",
+    "label": "Kaspersky 数据"
+  },
+  {
+    "name": "Bitdefender",
+    "label": "Bitdefender 数据"
+  },
+  {
+    "name": "Norton",
+    "label": "Norton 数据"
+  },
+  {
+    "name": "McAfee",
+    "label": "McAfee 数据"
+  },
+  {
+    "name": "Avast",
+    "label": "Avast 数据"
+  },
+  {
+    "name": "AVG",
+    "label": "AVG 数据"
+  },
+  {
+    "name": "ESET",
+    "label": "ESET 数据"
+  },
+  {
+    "name": "Malwarebytes",
+    "label": "Malwarebytes 数据"
+  },
+  {
+    "name": "360 Total Security",
+    "label": "360 Total Security 数据"
+  },
+  {
+    "name": "火绒",
+    "label": "火绒 数据"
+  },
+  {
+    "name": "Huorong",
+    "label": "Huorong 数据"
+  },
+  {
+    "name": "Tencent PC Manager",
+    "label": "Tencent PC Manager 数据"
+  },
+  {
+    "name": "QQ电脑管家",
+    "label": "QQ电脑管家 数据"
+  },
+  {
+    "name": "Windows Defender",
+    "label": "Windows Defender 数据"
+  },
+  {
+    "name": "Sandboxie",
+    "label": "Sandboxie 数据"
+  },
+  {
+    "name": "VMware Player",
+    "label": "VMware Player 数据"
+  },
+  {
+    "name": "VMware Workstation",
+    "label": "VMware Workstation 数据"
+  },
+  {
+    "name": "Oracle VM VirtualBox",
+    "label": "Oracle VM VirtualBox 数据"
+  },
+  {
+    "name": "Hyper-V Manager",
+    "label": "Hyper-V Manager 数据"
+  },
+  {
+    "name": "Rancher",
+    "label": "Rancher 数据"
+  },
+  {
+    "name": "Podman Desktop",
+    "label": "Podman Desktop 数据"
+  },
+  {
+    "name": "Lens",
+    "label": "Lens 数据"
+  },
+  {
+    "name": "OpenLens",
+    "label": "OpenLens 数据"
+  },
+  {
+    "name": "k9s",
+    "label": "k9s 数据"
+  },
+  {
+    "name": "Helm",
+    "label": "Helm 数据"
+  },
+  {
+    "name": "Terraform",
+    "label": "Terraform 数据"
+  },
+  {
+    "name": "Ansible",
+    "label": "Ansible 数据"
+  },
+  {
+    "name": "Packer",
+    "label": "Packer 数据"
+  },
+  {
+    "name": "Grafana",
+    "label": "Grafana 数据"
+  },
+  {
+    "name": "Prometheus",
+    "label": "Prometheus 数据"
+  },
+  {
+    "name": "InfluxDB",
+    "label": "InfluxDB 数据"
+  },
+  {
+    "name": "ClickHouse",
+    "label": "ClickHouse 数据"
+  },
+  {
+    "name": "Redis Desktop Manager",
+    "label": "Redis Desktop Manager 数据"
+  },
+  {
+    "name": "Another Redis",
+    "label": "Another Redis 数据"
+  },
+  {
+    "name": "DBeaver",
+    "label": "DBeaver 数据"
+  },
+  {
+    "name": "HeidiSQL",
+    "label": "HeidiSQL 数据"
+  },
+  {
+    "name": "Sequel Pro",
+    "label": "Sequel Pro 数据"
+  },
+  {
+    "name": "Navicat",
+    "label": "Navicat 数据"
+  },
+  {
+    "name": "SQLyog",
+    "label": "SQLyog 数据"
+  },
+  {
+    "name": "MongoDB Compass",
+    "label": "MongoDB Compass 数据"
+  },
+  {
+    "name": "Robo 3T",
+    "label": "Robo 3T 数据"
+  },
+  {
+    "name": "Azure Data Studio",
+    "label": "Azure Data Studio 数据"
+  },
+  {
+    "name": "TablePlus",
+    "label": "TablePlus 数据"
+  },
+  {
+    "name": "Adminer",
+    "label": "Adminer 数据"
+  },
+  {
+    "name": "phpMyAdmin",
+    "label": "phpMyAdmin 数据"
+  },
+  {
+    "name": "pgAdmin",
+    "label": "pgAdmin 数据"
+  },
+  {
+    "name": "Fluent",
+    "label": "Fluent 数据"
+  },
+  {
+    "name": "Kafka",
+    "label": "Kafka 数据"
+  },
+  {
+    "name": "Zookeeper",
+    "label": "Zookeeper 数据"
+  },
+  {
+    "name": "RabbitMQ",
+    "label": "RabbitMQ 数据"
+  },
+  {
+    "name": "Nginx",
+    "label": "Nginx 数据"
+  },
+  {
+    "name": "Apache",
+    "label": "Apache 数据"
+  },
+  {
+    "name": "Tomcat",
+    "label": "Tomcat 数据"
+  },
+  {
+    "name": "Node.js",
+    "label": "Node.js 数据"
+  },
+  {
+    "name": "nvm-windows",
+    "label": "nvm-windows 数据"
+  },
+  {
+    "name": "Yarn Cache",
+    "label": "Yarn Cache 数据"
+  },
+  {
+    "name": "Bun",
+    "label": "Bun 数据"
+  },
+  {
+    "name": "Deno",
+    "label": "Deno 数据"
+  },
+  {
+    "name": "pnpm-workspace",
+    "label": "pnpm-workspace 数据"
+  },
+  {
+    "name": "Grunt",
+    "label": "Grunt 数据"
+  },
+  {
+    "name": "Gulp",
+    "label": "Gulp 数据"
+  },
+  {
+    "name": "webpack",
+    "label": "webpack 数据"
+  },
+  {
+    "name": "Vite",
+    "label": "Vite 数据"
+  },
+  {
+    "name": "Rollup",
+    "label": "Rollup 数据"
+  },
+  {
+    "name": "ESLint",
+    "label": "ESLint 数据"
+  },
+  {
+    "name": "Prettier",
+    "label": "Prettier 数据"
+  },
+  {
+    "name": "TypeScript",
+    "label": "TypeScript 数据"
+  },
+  {
+    "name": "ts-node",
+    "label": "ts-node 数据"
+  },
+  {
+    "name": "nodemon",
+    "label": "nodemon 数据"
+  },
+  {
+    "name": "esbuild",
+    "label": "esbuild 数据"
+  },
+  {
+    "name": "parcel",
+    "label": "parcel 数据"
+  },
+  {
+    "name": "Expo",
+    "label": "Expo 数据"
+  },
+  {
+    "name": "React Native",
+    "label": "React Native 数据"
+  },
+  {
+    "name": "Flutter SDK",
+    "label": "Flutter SDK 数据"
+  },
+  {
+    "name": "Android SDK Manager",
+    "label": "Android SDK Manager 数据"
+  },
+  {
+    "name": "Xamarin",
+    "label": "Xamarin 数据"
+  },
+  {
+    "name": "Cordova",
+    "label": "Cordova 数据"
+  },
+  {
+    "name": "Ionic",
+    "label": "Ionic 数据"
+  },
+  {
+    "name": "Capacitor",
+    "label": "Capacitor 数据"
+  },
+  {
+    "name": "Tauri",
+    "label": "Tauri 数据"
+  },
+  {
+    "name": "Qt",
+    "label": "Qt 数据"
+  },
+  {
+    "name": "wxWidgets",
+    "label": "wxWidgets 数据"
+  },
+  {
+    "name": "GTK",
+    "label": "GTK 数据"
+  },
+  {
+    "name": "CMake Cache",
+    "label": "CMake Cache 数据"
+  },
+  {
+    "name": "MSYS2",
+    "label": "MSYS2 数据"
+  },
+  {
+    "name": "MinGW",
+    "label": "MinGW 数据"
+  },
+  {
+    "name": "Cygwin",
+    "label": "Cygwin 数据"
+  },
+  {
+    "name": "Git Bash",
+    "label": "Git Bash 数据"
+  },
+  {
+    "name": "JDK",
+    "label": "JDK 数据"
+  },
+  {
+    "name": "JRE",
+    "label": "JRE 数据"
+  },
+  {
+    "name": "OpenJDK",
+    "label": "OpenJDK 数据"
+  },
+  {
+    "name": "Adoptium",
+    "label": "Adoptium 数据"
+  },
+  {
+    "name": "Temurin",
+    "label": "Temurin 数据"
+  },
+  {
+    "name": "Oracle Java",
+    "label": "Oracle Java 数据"
+  },
+  {
+    "name": "Azul Zulu",
+    "label": "Azul Zulu 数据"
+  },
+  {
+    "name": "Gradle",
+    "label": "Gradle 数据"
+  },
+  {
+    "name": "Maven",
+    "label": "Maven 数据"
+  },
+  {
+    "name": "Ant",
+    "label": "Ant 数据"
+  },
+  {
+    "name": "SBT",
+    "label": "SBT 数据"
+  },
+  {
+    "name": "Scala",
+    "label": "Scala 数据"
+  },
+  {
+    "name": "Groovy",
+    "label": "Groovy 数据"
+  },
+  {
+    "name": "Clojure",
+    "label": "Clojure 数据"
+  },
+  {
+    "name": "Erlang",
+    "label": "Erlang 数据"
+  },
+  {
+    "name": "Elixir",
+    "label": "Elixir 数据"
+  },
+  {
+    "name": "Haskell",
+    "label": "Haskell 数据"
+  },
+  {
+    "name": "Rust",
+    "label": "Rust 数据"
+  },
+  {
+    "name": "Cargo",
+    "label": "Cargo 数据"
+  },
+  {
+    "name": "Python 3",
+    "label": "Python 3 数据"
+  },
+  {
+    "name": "Python Launcher",
+    "label": "Python Launcher 数据"
+  },
+  {
+    "name": "Anaconda3",
+    "label": "Anaconda3 数据"
+  },
+  {
+    "name": "miniconda3",
+    "label": "miniconda3 数据"
+  },
+  {
+    "name": "Poetry",
+    "label": "Poetry 数据"
+  },
+  {
+    "name": "PDM",
+    "label": "PDM 数据"
+  },
+  {
+    "name": "Hatch",
+    "label": "Hatch 数据"
+  },
+  {
+    "name": "virtualenv",
+    "label": "virtualenv 数据"
+  },
+  {
+    "name": "venv",
+    "label": "venv 数据"
+  },
+  {
+    "name": "conda-forge",
+    "label": "conda-forge 数据"
+  },
+  {
+    "name": "Go",
+    "label": "Go 数据"
+  },
+  {
+    "name": "Ruby",
+    "label": "Ruby 数据"
+  },
+  {
+    "name": "Perl",
+    "label": "Perl 数据"
+  },
+  {
+    "name": "PHP",
+    "label": "PHP 数据"
+  },
+  {
+    "name": "Lua",
+    "label": "Lua 数据"
+  },
+  {
+    "name": "RStudio",
+    "label": "RStudio 数据"
+  },
+  {
+    "name": "JupyterLab",
+    "label": "JupyterLab 数据"
+  },
+  {
+    "name": "Spyder",
+    "label": "Spyder 数据"
+  },
+  {
+    "name": "PyCharm Community",
+    "label": "PyCharm Community 数据"
+  },
+  {
+    "name": "Google Colab",
+    "label": "Google Colab 数据"
+  },
+  {
+    "name": "Kaggle",
+    "label": "Kaggle 数据"
+  },
+  {
+    "name": "Weka",
+    "label": "Weka 数据"
+  },
+  {
+    "name": "MATLAB",
+    "label": "MATLAB 数据"
+  },
+  {
+    "name": "Octave",
+    "label": "Octave 数据"
+  },
+  {
+    "name": "Maple",
+    "label": "Maple 数据"
+  },
+  {
+    "name": "Mathematica",
+    "label": "Mathematica 数据"
+  },
+  {
+    "name": "Wolfram",
+    "label": "Wolfram 数据"
+  },
+  {
+    "name": "Scilab",
+    "label": "Scilab 数据"
+  },
+  {
+    "name": "SAS",
+    "label": "SAS 数据"
+  },
+  {
+    "name": "SPSS",
+    "label": "SPSS 数据"
+  },
+  {
+    "name": "Stata",
+    "label": "Stata 数据"
+  },
+  {
+    "name": "Power BI",
+    "label": "Power BI 数据"
+  },
+  {
+    "name": "Tableau",
+    "label": "Tableau 数据"
+  },
+  {
+    "name": "RapidMiner",
+    "label": "RapidMiner 数据"
+  },
+  {
+    "name": "KNIME",
+    "label": "KNIME 数据"
+  },
+  {
+    "name": "Orange",
+    "label": "Orange 数据"
+  },
+  {
+    "name": "QGIS",
+    "label": "QGIS 数据"
+  },
+  {
+    "name": "ArcGIS",
+    "label": "ArcGIS 数据"
+  },
+  {
+    "name": "Google Earth",
+    "label": "Google Earth 数据"
+  },
+  {
+    "name": "Zotero",
+    "label": "Zotero 数据"
+  },
+  {
+    "name": "Mendeley",
+    "label": "Mendeley 数据"
+  },
+  {
+    "name": "EndNote",
+    "label": "EndNote 数据"
+  },
+  {
+    "name": "Evernote",
+    "label": "Evernote 数据"
+  },
+  {
+    "name": "Notion China",
+    "label": "Notion China 数据"
+  },
+  {
+    "name": "Logseq",
+    "label": "Logseq 数据"
+  },
+  {
+    "name": "Roam",
+    "label": "Roam 数据"
+  },
+  {
+    "name": "Dynalist",
+    "label": "Dynalist 数据"
+  },
+  {
+    "name": "Workflowy",
+    "label": "Workflowy 数据"
+  },
+  {
+    "name": "OneNote",
+    "label": "OneNote 数据"
+  },
+  {
+    "name": "Bear",
+    "label": "Bear 数据"
+  },
+  {
+    "name": "Ulysses",
+    "label": "Ulysses 数据"
+  },
+  {
+    "name": "iA Writer",
+    "label": "iA Writer 数据"
+  },
+  {
+    "name": "Joplin",
+    "label": "Joplin 数据"
+  },
+  {
+    "name": "Simplenote",
+    "label": "Simplenote 数据"
+  },
+  {
+    "name": "Standard Notes",
+    "label": "Standard Notes 数据"
+  },
+  {
+    "name": "TiddlyWiki",
+    "label": "TiddlyWiki 数据"
+  },
+  {
+    "name": "Anki",
+    "label": "Anki 数据"
+  },
+  {
+    "name": "Quizlet",
+    "label": "Quizlet 数据"
+  },
+  {
+    "name": "Feishu Docs",
+    "label": "Feishu Docs 数据"
+  },
+  {
+    "name": "WPS Office",
+    "label": "WPS Office 数据"
+  },
+  {
+    "name": "WPS 表格",
+    "label": "WPS 表格 数据"
+  },
+  {
+    "name": "WPS 文字",
+    "label": "WPS 文字 数据"
+  },
+  {
+    "name": "OnlyOffice",
+    "label": "OnlyOffice 数据"
+  },
+  {
+    "name": "LibreOffice",
+    "label": "LibreOffice 数据"
+  },
+  {
+    "name": "OpenOffice",
+    "label": "OpenOffice 数据"
+  },
+  {
+    "name": "FreeOffice",
+    "label": "FreeOffice 数据"
+  },
+  {
+    "name": "永中Office",
+    "label": "永中Office 数据"
+  },
+  {
+    "name": "Foxit Reader",
+    "label": "Foxit Reader 数据"
+  },
+  {
+    "name": "Adobe Reader",
+    "label": "Adobe Reader 数据"
+  },
+  {
+    "name": "SumatraPDF",
+    "label": "SumatraPDF 数据"
+  },
+  {
+    "name": "Nitro PDF",
+    "label": "Nitro PDF 数据"
+  },
+  {
+    "name": "PDF-XChange",
+    "label": "PDF-XChange 数据"
+  },
+  {
+    "name": "PDFsam",
+    "label": "PDFsam 数据"
+  },
+  {
+    "name": "ABBYY",
+    "label": "ABBYY 数据"
+  },
+  {
+    "name": "ABBYY FineReader",
+    "label": "ABBYY FineReader 数据"
+  },
+  {
+    "name": "Tesseract",
+    "label": "Tesseract 数据"
+  },
+  {
+    "name": "OCRmyPDF",
+    "label": "OCRmyPDF 数据"
+  },
+  {
+    "name": "百度输入法",
+    "label": "百度输入法 数据"
+  },
+  {
+    "name": "搜狗输入法",
+    "label": "搜狗输入法 数据"
+  },
+  {
+    "name": "QQ输入法",
+    "label": "QQ输入法 数据"
+  },
+  {
+    "name": "讯飞输入法",
+    "label": "讯飞输入法 数据"
+  },
+  {
+    "name": "手心输入法",
+    "label": "手心输入法 数据"
+  },
+  {
+    "name": "微软拼音",
+    "label": "微软拼音 数据"
+  },
+  {
+    "name": "小狼毫",
+    "label": "小狼毫 数据"
+  },
+  {
+    "name": "Rime",
+    "label": "Rime 数据"
+  },
+  {
+    "name": "冰点文库下载器",
+    "label": "冰点文库下载器 数据"
+  },
+  {
+    "name": "CAJViewer",
+    "label": "CAJViewer 数据"
+  },
+  {
+    "name": "知网",
+    "label": "知网 数据"
+  },
+  {
+    "name": "万方",
+    "label": "万方 数据"
+  },
+  {
+    "name": "维普",
+    "label": "维普 数据"
+  },
+  {
+    "name": "超星",
+    "label": "超星 数据"
+  },
+  {
+    "name": "Kindle",
+    "label": "Kindle 数据"
+  },
+  {
+    "name": "Calibre",
+    "label": "Calibre 数据"
+  },
+  {
+    "name": "Neat Reader",
+    "label": "Neat Reader 数据"
+  },
+  {
+    "name": "掌阅",
+    "label": "掌阅 数据"
+  },
+  {
+    "name": "微信读书",
+    "label": "微信读书 数据"
+  },
+  {
+    "name": "哔哩哔哩",
+    "label": "哔哩哔哩 数据"
+  },
+  {
+    "name": "Bilibili",
+    "label": "Bilibili 数据"
+  },
+  {
+    "name": "哔哩哔哩直播",
+    "label": "哔哩哔哩直播 数据"
+  },
+  {
+    "name": "抖音",
+    "label": "抖音 数据"
+  },
+  {
+    "name": "TikTok",
+    "label": "TikTok 数据"
+  },
+  {
+    "name": "快手",
+    "label": "快手 数据"
+  },
+  {
+    "name": "小红书",
+    "label": "小红书 数据"
+  },
+  {
+    "name": "微博",
+    "label": "微博 数据"
+  },
+  {
+    "name": "贴吧",
+    "label": "贴吧 数据"
+  },
+  {
+    "name": "知乎",
+    "label": "知乎 数据"
+  },
+  {
+    "name": "虎扑",
+    "label": "虎扑 数据"
+  },
+  {
+    "name": "懂球帝",
+    "label": "懂球帝 数据"
+  },
+  {
+    "name": "汽车之家",
+    "label": "汽车之家 数据"
+  },
+  {
+    "name": "网易云音乐",
+    "label": "网易云音乐 数据"
+  },
+  {
+    "name": "QQ音乐",
+    "label": "QQ音乐 数据"
+  },
+  {
+    "name": "酷狗音乐",
+    "label": "酷狗音乐 数据"
+  },
+  {
+    "name": "酷我音乐",
+    "label": "酷我音乐 数据"
+  },
+  {
+    "name": "咪咕音乐",
+    "label": "咪咕音乐 数据"
+  },
+  {
+    "name": "虾米音乐",
+    "label": "虾米音乐 数据"
+  },
+  {
+    "name": "Apple Music",
+    "label": "Apple Music 数据"
+  },
+  {
+    "name": "YouTube",
+    "label": "YouTube 数据"
+  },
+  {
+    "name": "Spotify Music",
+    "label": "Spotify Music 数据"
+  },
+  {
+    "name": "网易邮箱大师",
+    "label": "网易邮箱大师 数据"
+  },
+  {
+    "name": "Foxmail",
+    "label": "Foxmail 数据"
+  },
+  {
+    "name": "DreamMail",
+    "label": "DreamMail 数据"
+  },
+  {
+    "name": "Thunderbird",
+    "label": "Thunderbird 数据"
+  },
+  {
+    "name": "Mailbird",
+    "label": "Mailbird 数据"
+  },
+  {
+    "name": "eM Client",
+    "label": "eM Client 数据"
+  },
+  {
+    "name": "Blue Mail",
+    "label": "Blue Mail 数据"
+  },
+  {
+    "name": "Spark Mail",
+    "label": "Spark Mail 数据"
+  },
+  {
+    "name": "AirMail",
+    "label": "AirMail 数据"
+  },
+  {
+    "name": "TeamViewer Host",
+    "label": "TeamViewer Host 数据"
+  },
+  {
+    "name": "ToDesk Remote",
+    "label": "ToDesk Remote 数据"
+  },
+  {
+    "name": "Splashtop",
+    "label": "Splashtop 数据"
+  },
+  {
+    "name": "Jump Desktop",
+    "label": "Jump Desktop 数据"
+  },
+  {
+    "name": "Royal TS",
+    "label": "Royal TS 数据"
+  },
+  {
+    "name": "Remote Desktop",
+    "label": "Remote Desktop 数据"
+  },
+  {
+    "name": "mRemoteNG",
+    "label": "mRemoteNG 数据"
+  },
+  {
+    "name": "PuTTY Portable",
+    "label": "PuTTY Portable 数据"
+  },
+  {
+    "name": "KiTTY",
+    "label": "KiTTY 数据"
+  },
+  {
+    "name": "SuperPutty",
+    "label": "SuperPutty 数据"
+  },
+  {
+    "name": "Bitvise",
+    "label": "Bitvise 数据"
+  },
+  {
+    "name": "WinMerge",
+    "label": "WinMerge 数据"
+  },
+  {
+    "name": "Beyond Compare",
+    "label": "Beyond Compare 数据"
+  },
+  {
+    "name": "Meld",
+    "label": "Meld 数据"
+  },
+  {
+    "name": "KDiff3",
+    "label": "KDiff3 数据"
+  },
+  {
+    "name": "diffmerge",
+    "label": "diffmerge 数据"
+  },
+  {
+    "name": "Araxis",
+    "label": "Araxis 数据"
+  },
+  {
+    "name": "SemanticMerge",
+    "label": "SemanticMerge 数据"
+  },
+  {
+    "name": "Everything Search",
+    "label": "Everything Search 数据"
+  },
+  {
+    "name": "WizTree",
+    "label": "WizTree 数据"
+  },
+  {
+    "name": "DiskGenius",
+    "label": "DiskGenius 数据"
+  },
+  {
+    "name": "MiniTool Partition",
+    "label": "MiniTool Partition 数据"
+  },
+  {
+    "name": "AOMEI",
+    "label": "AOMEI 数据"
+  },
+  {
+    "name": "EaseUS",
+    "label": "EaseUS 数据"
+  },
+  {
+    "name": "R-Studio",
+    "label": "R-Studio 数据"
+  },
+  {
+    "name": "PhotoRec",
+    "label": "PhotoRec 数据"
+  },
+  {
+    "name": "TestDisk",
+    "label": "TestDisk 数据"
+  },
+  {
+    "name": "VeraCrypt",
+    "label": "VeraCrypt 数据"
+  },
+  {
+    "name": "BitLocker",
+    "label": "BitLocker 数据"
+  },
+  {
+    "name": "Gpg4win",
+    "label": "Gpg4win 数据"
+  },
+  {
+    "name": "Kleopatra",
+    "label": "Kleopatra 数据"
+  },
+  {
+    "name": "Proxifier",
+    "label": "Proxifier 数据"
+  },
+  {
+    "name": "NetLimiter",
+    "label": "NetLimiter 数据"
+  },
+  {
+    "name": "GlassWire",
+    "label": "GlassWire 数据"
+  },
+  {
+    "name": "TCPView",
+    "label": "TCPView 数据"
+  },
+  {
+    "name": "ProcMon",
+    "label": "ProcMon 数据"
+  },
+  {
+    "name": "Sysinternals",
+    "label": "Sysinternals 数据"
+  },
+  {
+    "name": "Autoruns",
+    "label": "Autoruns 数据"
+  },
+  {
+    "name": "Regedit",
+    "label": "Regedit 数据"
+  },
+  {
+    "name": "gpedit",
+    "label": "gpedit 数据"
+  },
+  {
+    "name": "services.msc",
+    "label": "services.msc 数据"
+  },
+  {
+    "name": "Device Manager",
+    "label": "Device Manager 数据"
+  },
+  {
+    "name": "Task Manager",
+    "label": "Task Manager 数据"
+  },
+  {
+    "name": "Resource Monitor",
+    "label": "Resource Monitor 数据"
+  },
+  {
+    "name": "Performance Monitor",
+    "label": "Performance Monitor 数据"
+  },
+  {
+    "name": "Reliability Monitor",
+    "label": "Reliability Monitor 数据"
+  },
+  {
+    "name": "Windows Update",
+    "label": "Windows Update 数据"
+  },
+  {
+    "name": "Windows Terminal",
+    "label": "Windows Terminal 数据"
+  },
+  {
+    "name": "Windows PowerShell",
+    "label": "Windows PowerShell 数据"
+  },
+  {
+    "name": "PowerShell 7",
+    "label": "PowerShell 7 数据"
+  },
+  {
+    "name": "cmd",
+    "label": "cmd 数据"
+  },
+  {
+    "name": "ConEmu",
+    "label": "ConEmu 数据"
+  },
+  {
+    "name": "Cmder",
+    "label": "Cmder 数据"
+  },
+  {
+    "name": "Alacritty",
+    "label": "Alacritty 数据"
+  },
+  {
+    "name": "WezTerm",
+    "label": "WezTerm 数据"
+  },
+  {
+    "name": "Hyper Terminal",
+    "label": "Hyper Terminal 数据"
+  },
+  {
+    "name": "Tabby",
+    "label": "Tabby 数据"
+  },
+  {
+    "name": "Windows Sandbox",
+    "label": "Windows Sandbox 数据"
+  },
+  {
+    "name": "Windows Subsystem for Android",
+    "label": "Windows Subsystem for Android 数据"
+  },
+  {
+    "name": "Amazon",
+    "label": "Amazon 数据"
+  },
+  {
+    "name": "Kindle for PC",
+    "label": "Kindle for PC 数据"
+  },
+  {
+    "name": "Audible",
+    "label": "Audible 数据"
+  },
+  {
+    "name": "Prime Video",
+    "label": "Prime Video 数据"
+  },
+  {
+    "name": "Netflix",
+    "label": "Netflix 数据"
+  },
+  {
+    "name": "Disney+",
+    "label": "Disney+ 数据"
+  },
+  {
+    "name": "HBO Max",
+    "label": "HBO Max 数据"
+  },
+  {
+    "name": "Peacock",
+    "label": "Peacock 数据"
+  },
+  {
+    "name": "Hulu",
+    "label": "Hulu 数据"
+  },
+  {
+    "name": "Crunchyroll",
+    "label": "Crunchyroll 数据"
+  },
+  {
+    "name": "Funimation",
+    "label": "Funimation 数据"
+  },
+  {
+    "name": "Bilibili UWP",
+    "label": "Bilibili UWP 数据"
+  },
+  {
+    "name": "Youku",
+    "label": "Youku 数据"
+  },
+  {
+    "name": "Tencent Video",
+    "label": "Tencent Video 数据"
+  },
+  {
+    "name": "IQIYI",
+    "label": "IQIYI 数据"
+  },
+  {
+    "name": "芒果TV",
+    "label": "芒果TV 数据"
+  },
+  {
+    "name": "优酷",
+    "label": "优酷 数据"
+  },
+  {
+    "name": "爱奇艺",
+    "label": "爱奇艺 数据"
+  },
+  {
+    "name": "腾讯视频",
+    "label": "腾讯视频 数据"
+  },
+  {
+    "name": "AcFun",
+    "label": "AcFun 数据"
+  },
+  {
+    "name": "斗鱼",
+    "label": "斗鱼 数据"
+  },
+  {
+    "name": "虎牙直播",
+    "label": "虎牙直播 数据"
+  },
+  {
+    "name": "YY直播",
+    "label": "YY直播 数据"
+  },
+  {
+    "name": "战旗直播",
+    "label": "战旗直播 数据"
+  },
+  {
+    "name": "龙珠直播",
+    "label": "龙珠直播 数据"
+  },
+  {
+    "name": "企鹅电竞",
+    "label": "企鹅电竞 数据"
+  },
+  {
+    "name": "网易CC",
+    "label": "网易CC 数据"
+  },
+  {
+    "name": "映客",
+    "label": "映客 数据"
+  },
+  {
+    "name": "花椒",
+    "label": "花椒 数据"
+  },
+  {
+    "name": "快手直播",
+    "label": "快手直播 数据"
+  },
+  {
+    "name": "陌陌",
+    "label": "陌陌 数据"
+  },
+  {
+    "name": "探探",
+    "label": "探探 数据"
+  },
+  {
+    "name": "Soul",
+    "label": "Soul 数据"
+  },
+  {
+    "name": "世纪佳缘",
+    "label": "世纪佳缘 数据"
+  },
+  {
+    "name": "百合网",
+    "label": "百合网 数据"
+  },
+  {
+    "name": "珍爱网",
+    "label": "珍爱网 数据"
+  },
+  {
+    "name": "Blued",
+    "label": "Blued 数据"
+  },
+  {
+    "name": "Grindr",
+    "label": "Grindr 数据"
+  },
+  {
+    "name": "OkCupid",
+    "label": "OkCupid 数据"
+  },
+  {
+    "name": "Match",
+    "label": "Match 数据"
+  },
+  {
+    "name": "Tinder",
+    "label": "Tinder 数据"
+  },
+  {
+    "name": "Bumble",
+    "label": "Bumble 数据"
+  },
+  {
+    "name": "Hinge",
+    "label": "Hinge 数据"
+  },
+  {
+    "name": "Facebook",
+    "label": "Facebook 数据"
+  },
+  {
+    "name": "Instagram",
+    "label": "Instagram 数据"
+  },
+  {
+    "name": "WhatsApp",
+    "label": "WhatsApp 数据"
+  },
+  {
+    "name": "Telegram",
+    "label": "Telegram 数据"
+  },
+  {
+    "name": "Signal",
+    "label": "Signal 数据"
+  },
+  {
+    "name": "Viber",
+    "label": "Viber 数据"
+  },
+  {
+    "name": "Snapchat",
+    "label": "Snapchat 数据"
+  },
+  {
+    "name": "Discord PTB",
+    "label": "Discord PTB 数据"
+  },
+  {
+    "name": "Slack Desktop",
+    "label": "Slack Desktop 数据"
+  },
+  {
+    "name": "Rocket.Chat",
+    "label": "Rocket.Chat 数据"
+  },
+  {
+    "name": "Matrix",
+    "label": "Matrix 数据"
+  },
+  {
+    "name": "Element",
+    "label": "Element 数据"
+  },
+  {
+    "name": "Mattermost",
+    "label": "Mattermost 数据"
+  },
+  {
+    "name": "MS Teams",
+    "label": "MS Teams 数据"
+  },
+  {
+    "name": "Google Chat",
+    "label": "Google Chat 数据"
+  },
+  {
+    "name": "Hangouts",
+    "label": "Hangouts 数据"
+  },
+  {
+    "name": "Zoom Workplace",
+    "label": "Zoom Workplace 数据"
+  },
+  {
+    "name": "Cisco Webex",
+    "label": "Cisco Webex 数据"
+  },
+  {
+    "name": "GoToMeeting",
+    "label": "GoToMeeting 数据"
+  },
+  {
+    "name": "Join.me",
+    "label": "Join.me 数据"
+  },
+  {
+    "name": "BlueJeans",
+    "label": "BlueJeans 数据"
+  },
+  {
+    "name": "StarLeaf",
+    "label": "StarLeaf 数据"
+  },
+  {
+    "name": "Zoho Meeting",
+    "label": "Zoho Meeting 数据"
+  },
+  {
+    "name": "Lark Suite",
+    "label": "Lark Suite 数据"
+  },
+  {
+    "name": "钉钉文档",
+    "label": "钉钉文档 数据"
+  },
+  {
+    "name": "腾讯会议国际版",
+    "label": "腾讯会议国际版 数据"
+  },
+  {
+    "name": "Polycom",
+    "label": "Polycom 数据"
+  },
+  {
+    "name": "Yealink",
+    "label": "Yealink 数据"
+  },
+  {
+    "name": "Logitech Capture",
+    "label": "Logitech Capture 数据"
+  },
+  {
+    "name": "Microsoft Teams Classic",
+    "label": "Microsoft Teams Classic 数据"
+  },
+  {
+    "name": "Clipchamp",
+    "label": "Clipchamp 数据"
+  },
+  {
+    "name": "Kdenlive",
+    "label": "Kdenlive 数据"
+  },
+  {
+    "name": "Shotcut",
+    "label": "Shotcut 数据"
+  },
+  {
+    "name": "Olive",
+    "label": "Olive 数据"
+  },
+  {
+    "name": "Pitivi",
+    "label": "Pitivi 数据"
+  },
+  {
+    "name": "OpenShot",
+    "label": "OpenShot 数据"
+  },
+  {
+    "name": "Lightworks",
+    "label": "Lightworks 数据"
+  },
+  {
+    "name": "iMovie",
+    "label": "iMovie 数据"
+  },
+  {
+    "name": "Avid",
+    "label": "Avid 数据"
+  },
+  {
+    "name": "DaVinci Studio",
+    "label": "DaVinci Studio 数据"
+  },
+  {
+    "name": "Magix",
+    "label": "Magix 数据"
+  },
+  {
+    "name": "Sony Vegas",
+    "label": "Sony Vegas 数据"
+  },
+  {
+    "name": "Vegas Pro",
+    "label": "Vegas Pro 数据"
+  },
+  {
+    "name": "Pinnacle Studio",
+    "label": "Pinnacle Studio 数据"
+  },
+  {
+    "name": "CyberLink PowerDirector",
+    "label": "CyberLink PowerDirector 数据"
+  },
+  {
+    "name": "Wondershare Filmora",
+    "label": "Wondershare Filmora 数据"
+  },
+  {
+    "name": "Bandicut",
+    "label": "Bandicut 数据"
+  },
+  {
+    "name": "AviDemux",
+    "label": "AviDemux 数据"
+  },
+  {
+    "name": "VirtualDub",
+    "label": "VirtualDub 数据"
+  },
+  {
+    "name": "MKVToolNix",
+    "label": "MKVToolNix 数据"
+  },
+  {
+    "name": "OBS Portable",
+    "label": "OBS Portable 数据"
+  },
+  {
+    "name": "Twitch Studio",
+    "label": "Twitch Studio 数据"
+  },
+  {
+    "name": "StreamElements",
+    "label": "StreamElements 数据"
+  },
+  {
+    "name": "Nightbot",
+    "label": "Nightbot 数据"
+  },
+  {
+    "name": "Streamlabs OBS",
+    "label": "Streamlabs OBS 数据"
+  },
+  {
+    "name": "OBS NDI",
+    "label": "OBS NDI 数据"
+  },
+  {
+    "name": "vb-audio",
+    "label": "vb-audio 数据"
+  },
+  {
+    "name": "Voicemeeter",
+    "label": "Voicemeeter 数据"
+  },
+  {
+    "name": "Equalizer APO",
+    "label": "Equalizer APO 数据"
+  },
+  {
+    "name": "REALTEK",
+    "label": "REALTEK 数据"
+  },
+  {
+    "name": "Nahimic",
+    "label": "Nahimic 数据"
+  },
+  {
+    "name": "Sonic Studio",
+    "label": "Sonic Studio 数据"
+  },
+  {
+    "name": "Dolby Access",
+    "label": "Dolby Access 数据"
+  },
+  {
+    "name": "DTS Sound Unbound",
+    "label": "DTS Sound Unbound 数据"
+  },
+  {
+    "name": "Spatial Sound",
+    "label": "Spatial Sound 数据"
+  },
+  {
+    "name": "Win10 Settings",
+    "label": "Win10 Settings 数据"
+  },
+  {
+    "name": "PowerToys FancyZones",
+    "label": "PowerToys FancyZones 数据"
+  },
+  {
+    "name": "AutoHDR",
+    "label": "AutoHDR 数据"
+  },
+  {
+    "name": "Game Bar",
+    "label": "Game Bar 数据"
+  },
+  {
+    "name": "Xbox Game Bar",
+    "label": "Xbox Game Bar 数据"
+  },
+  {
+    "name": "Xbox Live",
+    "label": "Xbox Live 数据"
+  },
+  {
+    "name": "Xbox App",
+    "label": "Xbox App 数据"
+  },
+  {
+    "name": "Game Pass",
+    "label": "Game Pass 数据"
+  },
+  {
+    "name": "EA app",
+    "label": "EA app 数据"
+  },
+  {
+    "name": "Ubisoft Connect PC",
+    "label": "Ubisoft Connect PC 数据"
+  },
+  {
+    "name": "Rockstar Games Launcher",
+    "label": "Rockstar Games Launcher 数据"
+  },
+  {
+    "name": "Epic Games Launcher",
+    "label": "Epic Games Launcher 数据"
+  },
+  {
+    "name": "Genshin Impact Launcher",
+    "label": "Genshin Impact Launcher 数据"
+  },
+  {
+    "name": "Wuthering Waves Launcher",
+    "label": "Wuthering Waves Launcher 数据"
+  },
+  {
+    "name": "Minecraft",
+    "label": "Minecraft 数据"
+  },
+  {
+    "name": "Roblox",
+    "label": "Roblox 数据"
+  },
+  {
+    "name": "Fortnite Launcher",
+    "label": "Fortnite Launcher 数据"
+  },
+  {
+    "name": "LOL",
+    "label": "LOL 数据"
+  },
+  {
+    "name": "英雄联盟",
+    "label": "英雄联盟 数据"
+  },
+  {
+    "name": "王者荣耀",
+    "label": "王者荣耀 数据"
+  },
+  {
+    "name": "和平精英",
+    "label": "和平精英 数据"
+  },
+  {
+    "name": "原神",
+    "label": "原神 数据"
+  },
+  {
+    "name": "崩坏星穹铁道",
+    "label": "崩坏星穹铁道 数据"
+  },
+  {
+    "name": "明日方舟",
+    "label": "明日方舟 数据"
+  },
+  {
+    "name": "碧蓝航线",
+    "label": "碧蓝航线 数据"
+  },
+  {
+    "name": "FGO",
+    "label": "FGO 数据"
+  },
+  {
+    "name": "赛马娘",
+    "label": "赛马娘 数据"
+  },
+  {
+    "name": "公主连结",
+    "label": "公主连结 数据"
+  },
+  {
+    "name": "Fate/Grand Order",
+    "label": "Fate/Grand Order 数据"
+  },
+  {
+    "name": "偶像大师",
+    "label": "偶像大师 数据"
+  },
+  {
+    "name": "Love Live",
+    "label": "Love Live 数据"
+  },
+  {
+    "name": "BanG Dream",
+    "label": "BanG Dream 数据"
+  },
+  {
+    "name": "少女前线",
+    "label": "少女前线 数据"
+  },
+  {
+    "name": "明日方舟EN",
+    "label": "明日方舟EN 数据"
+  },
+  {
+    "name": "Arknights",
+    "label": "Arknights 数据"
+  },
+  {
+    "name": "Blue Archive",
+    "label": "Blue Archive 数据"
+  },
+  {
+    "name": "Nikke",
+    "label": "Nikke 数据"
+  },
+  {
+    "name": "World Flipper",
+    "label": "World Flipper 数据"
+  },
+  {
+    "name": "影之诗",
+    "label": "影之诗 数据"
+  },
+  {
+    "name": "炉石传说",
+    "label": "炉石传说 数据"
+  },
+  {
+    "name": "阴阳师",
+    "label": "阴阳师 数据"
+  },
+  {
+    "name": "决战平安京",
+    "label": "决战平安京 数据"
+  },
+  {
+    "name": "阴阳师百闻牌",
+    "label": "阴阳师百闻牌 数据"
+  },
+  {
+    "name": "永远的七日之都",
+    "label": "永远的七日之都 数据"
+  },
+  {
+    "name": "崩坏3",
+    "label": "崩坏3 数据"
+  },
+  {
+    "name": "崩坏学园2",
+    "label": "崩坏学园2 数据"
+  },
+  {
+    "name": "未定事件簿",
+    "label": "未定事件簿 数据"
+  },
+  {
+    "name": "恋与制作人",
+    "label": "恋与制作人 数据"
+  },
+  {
+    "name": "闪耀暖暖",
+    "label": "闪耀暖暖 数据"
+  },
+  {
+    "name": "奇迹暖暖",
+    "label": "奇迹暖暖 数据"
+  },
+  {
+    "name": "光与夜之恋",
+    "label": "光与夜之恋 数据"
+  },
+  {
+    "name": "时空中的绘旅人",
+    "label": "时空中的绘旅人 数据"
+  },
+  {
+    "name": "Wuthering",
+    "label": "Wuthering 数据"
+  },
+  {
+    "name": "Honkai Star Rail",
+    "label": "Honkai Star Rail 数据"
+  },
+  {
+    "name": "Zenless Zone Zero",
+    "label": "Zenless Zone Zero 数据"
+  },
+  {
+    "name": "DeviantArt",
+    "label": "DeviantArt 数据"
+  },
+  {
+    "name": "ArtStation",
+    "label": "ArtStation 数据"
+  },
+  {
+    "name": "Behance",
+    "label": "Behance 数据"
+  },
+  {
+    "name": "Dribbble",
+    "label": "Dribbble 数据"
+  },
+  {
+    "name": "Pinterest",
+    "label": "Pinterest 数据"
+  },
+  {
+    "name": "Instagram Desktop",
+    "label": "Instagram Desktop 数据"
+  },
+  {
+    "name": "Twitter",
+    "label": "Twitter 数据"
+  },
+  {
+    "name": "X",
+    "label": "X 数据"
+  },
+  {
+    "name": "Tumblr",
+    "label": "Tumblr 数据"
+  },
+  {
+    "name": "Reddit",
+    "label": "Reddit 数据"
+  },
+  {
+    "name": "Quora",
+    "label": "Quora 数据"
+  },
+  {
+    "name": "Medium",
+    "label": "Medium 数据"
+  },
+  {
+    "name": "Substack",
+    "label": "Substack 数据"
+  },
+  {
+    "name": "Blogger",
+    "label": "Blogger 数据"
+  },
+  {
+    "name": "WordPress",
+    "label": "WordPress 数据"
+  },
+  {
+    "name": "Ghost",
+    "label": "Ghost 数据"
+  },
+  {
+    "name": "Hugo",
+    "label": "Hugo 数据"
+  },
+  {
+    "name": "Jekyll",
+    "label": "Jekyll 数据"
+  },
+  {
+    "name": "Hexo",
+    "label": "Hexo 数据"
+  },
+  {
+    "name": "VuePress",
+    "label": "VuePress 数据"
+  },
+  {
+    "name": "Astro",
+    "label": "Astro 数据"
+  },
+  {
+    "name": "SvelteKit",
+    "label": "SvelteKit 数据"
+  },
+  {
+    "name": "Next.js",
+    "label": "Next.js 数据"
+  },
+  {
+    "name": "Nuxt",
+    "label": "Nuxt 数据"
+  },
+  {
+    "name": "Gatsby",
+    "label": "Gatsby 数据"
+  },
+  {
+    "name": "Docusaurus",
+    "label": "Docusaurus 数据"
+  },
+  {
+    "name": "mdBook",
+    "label": "mdBook 数据"
+  },
+  {
+    "name": "MkDocs",
+    "label": "MkDocs 数据"
+  },
+  {
+    "name": "Sphinx",
+    "label": "Sphinx 数据"
+  },
+  {
+    "name": "Read the Docs",
+    "label": "Read the Docs 数据"
+  }
+]
