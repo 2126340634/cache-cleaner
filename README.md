@@ -38,3 +38,7 @@ winget install NSIS.NSIS
 ### Qt 下载源
 
 下载源路径位于配置文件: `node_modules/@nodegui/nodegui/config/qtConfig.js`，可自行更换。
+
+### 常见问题
+
+打包时若报错 `Can not open the file as [7z] archive` / `Unexpected end of archive`，通常是 nodegui 下载的 Qt 压缩包缓存被截断损坏了。删除 `C:\Users\Administrator\AppData\Local\nodegui-mini-qt-nodejs\Cache\*.7z` 后重新打包即可，脚本会自动重新下载。
