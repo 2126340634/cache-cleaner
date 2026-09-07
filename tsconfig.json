@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "declaration": true,
+    "moduleResolution": "nodenext",
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "noLib": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "build",
+    "rootDir": "src"
+  },
+  "include": ["./src/**/*.ts"]
+}
