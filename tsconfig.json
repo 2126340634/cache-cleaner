@@ -4,6 +4,7 @@
     "target": "esnext",
     "module": "nodenext",
     "declaration": true,
+    "resolveJsonModule": true,
     "moduleResolution": "nodenext",
     "noImplicitAny": false,
     "noImplicitThis": true,
