@@ -15,9 +15,7 @@ export async function cleanDir(dir: string): Promise<void> {
     if (e.isSymbolicLink()) continue
     try {
       await fsp.rm(path.join(dir, e.name), { recursive: true, force: true })
-    } catch {
-      // 单个文件被占用/无权删时跳过，不阻塞其余文件
-    }
+    } catch {}
   }
 }
 

@@ -2,6 +2,9 @@
   "fetch": {
     "gitFromCwd": true
   },
+  "prepare": {
+    "tempDirectory": "./install-pack"
+  },
   "build": {
     "packageManager": "npm"
   },
@@ -34,8 +37,6 @@
     "skip": false,
     "description": "A disk cleaning Tool for Windows",
     "detailColors": "3db54a 000000",
-    "appTitle": "cache-cleaner",
-    "installerIcon": "",
-    "uninstallerIcon": ""
+    "appTitle": "Cache Cleaner"
   }
 }

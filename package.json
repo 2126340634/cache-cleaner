@@ -6,8 +6,8 @@
     "build": "npm run build-code && npm run build-bundle",
     "build-code": "tsc",
     "build-bundle": "esbuild build/main.js --sourcemap --bundle --outfile=dist/main.cjs --platform=node --format=cjs --external:@nodegui/nodegui \"--external:nodegui-plugin-*\"",
-    "clean": "rimraf build dist tmp-jam-pack-nodegui",
-    "package": "jam-pack-nodegui --config packaging/jam-pack-nodegui.json",
+    "clean": "rimraf build dist install-pack",
+    "package": "jam-pack-nodegui --config packaging/pack.json",
     "start": "npm run build && qode dist/main.cjs"
   },
   "author": "heyCHEEMS",
