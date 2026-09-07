@@ -24,18 +24,16 @@ npm run start
 npm run package
 ```
 
-打包产物输出到 `install-pack/` 目录(已加入 `.gitignore`)。
+### 前置依赖
 
-### 前置依赖(winget 安装)
-
-打包的 Zip 与 NSIS 环节分别需要命令行工具 `zip`、`makensis`,用 winget 装:
+打包需要命令行工具 `zip`、`makensis`,用 winget 装:
 
 ```powershell
 winget install GnuWin32.Zip
 winget install NSIS.NSIS
 ```
 
-装完环境变量 PATH 已添加`C:\Program Files (x86)\GnuWin32\bin` 和 `C:\Program Files (x86)\NSIS`。
+装好后确保环境变量 PATH 已添加`C:\Program Files (x86)\GnuWin32\bin` 和 `C:\Program Files (x86)\NSIS`。
 
 ### Qt 下载源
 
